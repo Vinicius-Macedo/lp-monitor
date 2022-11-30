@@ -26,7 +26,7 @@ export function Header() {
         <ul className="lista">
           <li className="item">
             <Link href="/" className="link">
-              ÍNICIO
+              A TITAN
             </Link>
           </li>
           <li className="item">
