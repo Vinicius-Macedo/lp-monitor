@@ -1,0 +1,84 @@
+import Image from "next/image";
+import React, { useState } from "react";
+import Link from "next/link";
+
+const imageLoader = require("./../loader.js");
+
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  return (
+    <header className="header">
+      <nav className={"menu" + (isMenuOpen ? " open" : "")}>
+        <Link href="/" className="xl:hidden">
+          <figure className="relative w-[80px] h-[40px]">
+            <Image
+              src="logo-titan.png"
+              alt="Logo da Wise"
+              fill
+              style={{ objectFit: "contain" }}
+              loader={imageLoader}
+              unoptimized={true}
+            />
+          </figure>
+        </Link>
+        <ul className="lista">
+          <li className="item">
+            <Link href="/" className="link">
+              INÍCIO
+            </Link>
+          </li>
+          <li className="item">
+            <Link href="/fundos" className="link">
+              FUNDOS
+            </Link>
+          </li>
+          <li className="item">
+            <Link href="/carteiras" className="link">
+              CARTEIRAS
+            </Link>
+          </li>
+          <li className="item">
+            <Link href="/seja-distribuidor" className="link">
+              SEJA DISTRIBUIDOR
+            </Link>
+          </li>
+          <Link href="/" className="hidden xl:block">
+            <figure className="relative w-[80px] h-[40px]">
+              <Image
+                src="logo-titan.png"
+                alt="Logo da Wise"
+                fill
+                style={{ objectFit: "contain" }}
+                loader={imageLoader}
+                unoptimized={true}
+              />
+            </figure>
+          </Link>
+          <li className="item">
+            <Link href="/organize-suas-financas" className="link">
+              ORGANIZE SUAS FINANÇAS
+            </Link>
+          </li>
+          <li className="item">
+            <Link href="/documentos" className="link">
+              DOCUMENTOS
+            </Link>
+          </li>
+          <li className="item">
+            <Link href="/contato" className="link">
+              CONTATO
+            </Link>
+          </li>
+        </ul>
+        <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="toggle-btn">
+          <div className="bars"></div>
+        </div>
+      </nav>
+      <div
+        onClick={() => setIsMenuOpen(false)}
+        className={"overflow" + (isMenuOpen ? " active" : "")}
+      ></div>
+    </header>
+  );
+}

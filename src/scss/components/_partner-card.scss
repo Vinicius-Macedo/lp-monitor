@@ -1,0 +1,47 @@
+.card-behavior:hover {
+  align-items: flex-start;
+
+  @include lg {
+    .appear {
+      display: block;
+    }
+
+    .desappear {
+      display: none;
+    }
+
+    .darken-when-hover {
+      transition: 0.3s;
+
+      filter: brightness(25%);
+    }
+  }
+}
+
+.card-behavior {
+  @apply w-[215px] h-[420px] flex flex-wrap items-end justify-end relative cursor-pointer;
+
+  .appear {
+    display: none;
+  }
+
+  .desappear {
+    display: block;
+  }
+
+  &.active {
+    .appear {
+      display: block;
+    }
+
+    .desappear {
+      display: none;
+    }
+
+    .darken-when-hover {
+      transition: 0.3s;
+
+      filter: brightness(25%);
+    }
+  }
+}

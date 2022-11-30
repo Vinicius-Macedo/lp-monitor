@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  productionBrowserSourceMaps: false,
+  images: {
+    loader: "custom",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
