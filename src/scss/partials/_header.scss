@@ -34,6 +34,10 @@ $h-bars: 3px;
     height: 80px;
     padding: 0 16px;
 
+    @include xl {
+      padding: 0;
+    }
+
     .lista {
       transition: 0.3s;
       position: absolute;
@@ -50,7 +54,7 @@ $h-bars: 3px;
         position: static;
         background: transparent;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         height: auto;
         visibility: visible;
@@ -65,9 +69,11 @@ $h-bars: 3px;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         @include xl {
           width: auto;
+          
         }
 
         .link {
@@ -79,6 +85,10 @@ $h-bars: 3px;
 
           &:hover {
             color: $blue;
+          }
+
+          @include xl {
+            font-size: 14px;
           }
         }
       }

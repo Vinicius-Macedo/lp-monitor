@@ -64,18 +64,18 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <SocialMediaIcons className="w-full justify-end" />
+          <SocialMediaIcons className="w-full justify-center lg:justify-end" />
         </div>
       </div>
       <div className="bg-[#202227]">
         <div
           className={
-            "px-8 py-8 sm:px-16 xl:px-0 xl:w-[1110px] xl:m-auto text-white flex flex-wrap flex-gap gap-16"
+            "px-8 py-8 sm:px-16 xl:px-0 xl:w-[1110px] xl:m-auto text-white flex flex-col sm:flex-row sm:flex-wrap gap-16"
           }
         >
-          <Link href={"/termos-de-uso"}>Termos e Condições</Link>
-          <Link href={"/politica-de-privacidade"}>Política de Privacidade</Link>
-          <Link href={"/contato"}>Contato</Link>
+          <Link href={"/termos-de-uso"} className="hover:underline" >Termos e Condições</Link>
+          <Link href={"/politica-de-privacidade"} className="hover:underline">Política de Privacidade</Link>
+          <Link href={"/"} className="hover:underline">Contato</Link>
         </div>
       </div>
     </footer>

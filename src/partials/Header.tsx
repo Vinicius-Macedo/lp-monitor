@@ -19,28 +19,24 @@ export function Header() {
               style={{ objectFit: "contain" }}
               loader={imageLoader}
               unoptimized={true}
+              priority
             />
           </figure>
         </Link>
         <ul className="lista">
           <li className="item">
             <Link href="/" className="link">
-              INÍCIO
+              ÍNICIO
             </Link>
           </li>
           <li className="item">
-            <Link href="/fundos" className="link">
-              FUNDOS
+            <Link href="/fundos-de-investimento" className="link">
+              FUNDOS DE INVESTIMENTO
             </Link>
           </li>
           <li className="item">
-            <Link href="/carteiras" className="link">
-              CARTEIRAS
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/seja-distribuidor" className="link">
-              SEJA DISTRIBUIDOR
+            <Link href="/wealth-management" className="link">
+              WEALTH MANAGEMENT
             </Link>
           </li>
           <Link href="/" className="hidden xl:block">
@@ -51,13 +47,14 @@ export function Header() {
                 fill
                 style={{ objectFit: "contain" }}
                 loader={imageLoader}
+                priority
                 unoptimized={true}
               />
             </figure>
           </Link>
           <li className="item">
-            <Link href="/organize-suas-financas" className="link">
-              ORGANIZE SUAS FINANÇAS
+            <Link href="/organizacao-financeira" className="link">
+              ORGANIZAÇÃO FINANCEIRA
             </Link>
           </li>
           <li className="item">
@@ -66,8 +63,8 @@ export function Header() {
             </Link>
           </li>
           <li className="item">
-            <Link href="/contato" className="link">
-              CONTATO
+            <Link href="/trabalhe-conosco" className="link">
+              TRABALHE CONOSCO
             </Link>
           </li>
         </ul>
