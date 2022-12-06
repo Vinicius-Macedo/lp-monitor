@@ -26,12 +26,17 @@ export function Header() {
         <ul className="lista">
           <li className="item">
             <Link href="/" className="link">
-              A TITAN
+              TITAN
             </Link>
           </li>
           <li className="item">
             <Link href="/fundos-de-investimento" className="link">
               FUNDOS DE INVESTIMENTO
+            </Link>
+          </li>
+          <li className="item">
+            <Link href="/fundos-de-investimento" className="link">
+              FIDC
             </Link>
           </li>
           <li className="item">

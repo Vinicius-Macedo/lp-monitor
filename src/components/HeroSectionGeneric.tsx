@@ -8,16 +8,20 @@ type HeroSectionGenericProps = {
   text?: string;
   imgAdress: any;
   imgAlt: string;
+  titleIsBig?: boolean;
 };
 
 export function HeroSectionGeneric(props: HeroSectionGenericProps) {
   return (
     <section className="relative w-full h-[600px] px-8 xl:pt-40 overflow-x-hidden">
-      <div className="w-full h-full max-w-[1110px] m-auto text-white flex flex-col justify-between py-32">
-        <div className="flex flex-col gap-16">
+      <div className="w-full h-full max-w-[1110px] m-auto text-white flex flex-col justify-center xl:justify-between py-32 gap-16 ">
+        <div className="flex flex-col xl:gap-16">
           <h1
             className={
-              "title-responsive font-light" + (props.text ? "" : "lg:mb-64")
+              props.titleIsBig
+                ? "text-center lg:text-left text-4xl lg:text-5xl xl:text-[96px] font-light xl:font-thin"
+                : "text-center lg:text-left title-responsive font-light" +
+                  (props.text ? "" : "lg:mb-64")
             }
           >
             {props.title}
@@ -30,7 +34,7 @@ export function HeroSectionGeneric(props: HeroSectionGenericProps) {
             ""
           )}
         </div>
-        <SocialMediaIcons className="w-full justify-center lg:justify-end" />
+        <SocialMediaIcons className="w-full justify-center lg:justify-start xl:justify-end" />
       </div>
 
       <Image

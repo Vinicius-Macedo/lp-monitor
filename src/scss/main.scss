@@ -7,7 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 // CORE
 @import "core/breakpoints";
 @import "core/colors";
@@ -18,5 +17,239 @@ html {
 @import "partials/header";
 @import "partials/footer";
 
-
 @import "components/partner-card";
+
+// GAMB
+.padding-top-secao {
+  @apply pt-32 lg:pt-64;
+}
+
+.etapa-item {
+  width: 100%;
+  max-width: 250px;
+
+  display: grid;
+  grid-template-areas: ". imagem" "numero texto" ". desc";
+
+  gap: 4px 16px;
+  align-items: center;
+
+  .etapa-img {
+    grid-area: imagem;
+    height: 73px;
+    margin: auto;
+    width: auto;
+  }
+
+  .etapa-numero {
+    grid-area: numero;
+    font-size: 26px;
+    font-weight: 700;
+    color: $blue;
+  }
+
+  .etapa-texto {
+    grid-area: texto;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .etapa-desc {
+    grid-area: desc;
+  }
+}
+
+.lista-caracteristicas {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .lista-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .circulo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 24px;
+
+      width: 32px;
+      height: 32px;
+
+      border-radius: 999px;
+      color: $blue;
+      border: $blue solid 2px;
+      font-weight: 700;
+    }
+
+    .lista-topico {
+      @apply leading-normal;
+
+      @include sm {
+        font-size: 20px;
+      }
+
+      @include xl {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.foto-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+
+  @include sm {
+    gap: 30px;
+  }
+
+  @include lg {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .casal-foto {
+    flex-shrink: 0;
+
+    width: 100%;
+    max-width: 410px;
+
+    @include xl {
+      max-width: 540px;
+    }
+  }
+
+  .texto-container {
+    max-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include md {
+      gap: 32px;
+    }
+
+    @include xl {
+      max-width: 540px;
+    }
+
+    .lista-caracteristicas {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .lista-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .circulo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          font-size: 24px;
+
+          width: 32px;
+          height: 32px;
+
+          border-radius: 999px;
+          color: $blue;
+          border: $blue solid 2px;
+          font-weight: 700;
+        }
+
+        .lista-topico {
+          @apply leading-normal;
+
+          @include sm {
+            font-size: 20px;
+          }
+
+          @include xl {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.texto-responsivo-big {
+  @apply leading-normal;
+
+  @include sm {
+    font-size: 28px;
+  }
+}
+
+.documento-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #cbcbcb;
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+
+  @include sm {
+    padding: 32px;
+  }
+
+  @include xl {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .documento-title {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    // max-width: 248px;
+
+    @include xl {
+      text-align: left;
+    }
+  }
+
+  .ul-pdfs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 571px;
+    border-top: solid $blue 3px;
+    padding-top: 16px;
+
+    @include sm {
+      gap: 16px;
+    }
+
+    @include xl {
+      border-top: none;
+      border-left: solid $blue 3px;
+      padding: 0 0 0 16px;
+    }
+
+    .li-pdf-link {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
