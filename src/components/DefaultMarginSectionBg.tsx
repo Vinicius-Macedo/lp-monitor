@@ -33,7 +33,7 @@ export function DefaultMarginSectionBg(props: DefaultMarginSectionProps) {
             src={props.imgAdress}
             alt={props.imgAlt}
             loader={imgLoader}
-            style={{ zIndex: -1, objectFit: "cover" }}
+            style={{ zIndex: -1, objectFit: "cover", objectPosition: "center" }}
             fill
           />
         ) : (

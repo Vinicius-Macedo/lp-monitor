@@ -35,7 +35,7 @@ export function Header() {
             </Link>
           </li>
           <li className="item">
-            <Link href="/fundos-de-investimento" className="link">
+            <Link href="/fidc" className="link">
               FIDC
             </Link>
           </li>
