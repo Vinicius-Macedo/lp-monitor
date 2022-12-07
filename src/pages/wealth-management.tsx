@@ -1,6 +1,8 @@
 import React from "react";
 import CardSolucoes from "../components/CardSolucoes";
+import CardWealth from "../components/CardWealth";
 import { DefaultMarginSection } from "../components/DefaultMarginSection";
+import { DefaultMarginSectionBg } from "../components/DefaultMarginSectionBg";
 import FaleComAGenteSection from "../components/FaleComAGenteSection";
 import { HeroSectionGeneric } from "../components/HeroSectionGeneric";
 
@@ -56,7 +58,51 @@ export default function WealthManagement() {
           />
         </div>
       </DefaultMarginSection>
-      <FaleComAGenteSection/>
+      <DefaultMarginSectionBg
+        isBackgroundImage={false}
+        backgroundClass="bg-[#202227]"
+        className="wealth-container gap-32"
+      >
+        <CardWealth
+          title={"ESTUDO DE PERFIL DO INVESTIDOR"}
+          text={
+            "Determinação do perfil do investidor como objetivos de retorno e risco, horizontes de investimento, tolerâncias, necessidades de liquidez e restrições e o estabelecimento da política de investimentos compatível com o perfil do cliente."
+          }
+          number={1}
+          imgAdres={"wealth-management/icone-wealth-01.png"}
+          imgAlt={"Icon de interseção de laptop e avatares"}
+        />
+        <CardWealth
+          title={"MODELAGEM E ALOCAÇÃO DE PORTFÓLIO"}
+          text={
+            "São definidos previamente os modelos de alocação estratégica com o emprego de técnicas de modelagem quantitativas de estudo do portfólio como unidade sistêmica. Após a modelagem, são definidos as classes de ativos disponíveis, a exposição desejada e alocação de recursos entre as grandes classes de ativos"
+          }
+          number={2}
+          imgAdres={"wealth-management/icone-wealth-02.png"}
+          imgAlt={"Icone de pasta de documentos"}
+        />
+        <CardWealth
+          title={"SELEÇÃO DE TÍTULOS"}
+          text={
+            "Análise de portfólio com o foco na classe de ativos e não na seleção individual de títulos, utilizamos títulos físicos, indexadores ou fundos de índice em bolsa. Evitamos o uso da seletividade “stock picking” ou o “market timing” com papéis de empresas individuais como parte do processo de decisão de compras de títulos."
+          }
+          number={3}
+          imgAdres={"wealth-management/icone-wealth-03.png"}
+          imgAlt={"Icone de lupa e documentos"}
+        />
+        <CardWealth
+          title={
+            "TESTES DE COMPATIBILIDADE DOS OBJETIVOS POR PORTFÓLIO EM TERMOS QUANTITATIVOS"
+          }
+          text={
+            "Condução de testes de compatibilidade dos objetos de retorno de risco do portfólio em termos quantitativos"
+          }
+          number={4}
+          imgAdres={"wealth-management/icone-wealth-04.png"}
+          imgAlt={"Icone de documento com checklist"}
+        />
+      </DefaultMarginSectionBg>
+      <FaleComAGenteSection />
     </main>
   );
 }
