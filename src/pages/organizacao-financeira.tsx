@@ -65,7 +65,7 @@ export default function OrganizacaoFinanceira() {
             unoptimized
           />
           <p className="etapa-numero">3</p>
-          <h3 className="etapa-texto">Mapear</h3>
+          <h3 className="etapa-texto">Orçamento</h3>
           <p className="etapa-desc">
             O planejador estrutura o orçamento personalizado do cliente com a
             definição de metas e a coleta de informação de dívidas, gastos,
@@ -161,12 +161,16 @@ export default function OrganizacaoFinanceira() {
           />
           <article className="texto-container">
             <p className="texto-responsivo-big text-center">
-              A falta de planejamento pode custar caro, pode custar a sua
-              liberdade. Pesquisas comprovam que somente 1% dos aposentados
-              consegue manter o padrão de vida na fase da aposentadoria.
+              Hoje,{" "}
+              <span className="text-blue font-black">
+                aproximadamente 1% dos aposentados
+              </span>{" "}
+              conseguem manter o padrão de vida que tinham antes de se
+              aposentar!
             </p>
             <p className="texto-responsivo-big text-center">
-              Resultados desse trabalho:
+              Além disso, o planejamento financeiro e de investimentos, traz muitos benefícios, como:
+
             </p>
             <div className="flex justify-center items-start gap-8 sm:gap-16">
               <ul className="lista-caracteristicas">

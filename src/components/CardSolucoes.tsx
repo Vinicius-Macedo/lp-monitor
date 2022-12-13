@@ -1,10 +1,12 @@
+import { ReactNode } from "react";
+
 type CardSolucoesProps = {
   title: string;
   subTopics: subTopics[];
 };
 
 type subTopics = {
-  text: string;
+  text: any;
 };
 
 export default function CardSolucoes(props: CardSolucoesProps) {

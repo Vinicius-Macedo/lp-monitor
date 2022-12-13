@@ -26,12 +26,12 @@ export function Header() {
         <ul className="lista">
           <li className="item">
             <Link href="/" className="link">
-              TITAN
+              A TITAN
             </Link>
           </li>
           <li className="item">
             <Link href="/fundos-de-investimento" className="link">
-              FUNDOS DE INVESTIMENTO
+              FUNDOS
             </Link>
           </li>
           <li className="item">
@@ -69,7 +69,7 @@ export function Header() {
           </li>
           <li className="item">
             <Link href="/trabalhe-conosco" className="link">
-              TRABALHE CONOSCO
+              CONTATO
             </Link>
           </li>
         </ul>

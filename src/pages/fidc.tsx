@@ -16,7 +16,7 @@ export default function Fidc() {
       <HeroSectionGeneric
         title={"FIDC"}
         text={
-          "ANTECIPAÇÃO DE RECEBÍVEIS, FEITA SOB MEDIDA, ATRAVÉS DA ESTRUTURAÇÃO DA FIDCS."
+          "ANTECIPAÇÃO DE RECEBÍVEIS, FEITA SOB MEDIDA, ATRAVÉS DA ESTRUTURAÇÃO DA FIDC's."
         }
         imgAdress={"fidc/fidc-hero.png"}
         imgAlt={"Imagem abstrata de gráficos misturado com moedas físicas"}
@@ -53,7 +53,7 @@ export default function Fidc() {
           <CardDarkBlue
             imgAdress={"fidc/icone-fidc-01.png"}
             imgAlt={"icone de carteira"}
-            text={"DIVIDA PARCELADA"}
+            text={"DÍVIDA PARCELADA"}
           />
           <CardDarkBlue
             imgAdress={"fidc/icone-fidc-02.png"}
@@ -87,7 +87,7 @@ export default function Fidc() {
             <FidcMiniArticle
               title={"2. Economia Fiscal"}
               text={
-                "Uma das vantagens do FIDC diz respeito às suas operações, que são isentas de tributação como, por exemplo, a Contribuição Social sobre o Lucro Líquido (CSSL), o Programa de Integração Social (PIS), Contribuição para Seguridade Social (COFINS) e Imposto de Renda Jurídica (IRPJ). Entretanto, somente o Imposto de Renda é cobrado no momento do resgate dos recursos pelo investidor do fundo, ou seja, o quotista."
+                "Uma das vantagens do FIDC diz respeito às operações, que são isentas de tributação como, por exemplo, a Contribuição Social sobre o Lucro Líquido (CSSL), o Programa de Integração Social (PIS), Contribuição para Seguridade Social (COFINS) e Imposto de Renda Jurídica (IRPJ). Entretanto, somente o Imposto de Renda é cobrado no momento do resgate dos recursos pelo investidor do fundo, ou seja, o quotista."
               }
             />
             <FidcMiniArticle
@@ -95,7 +95,7 @@ export default function Fidc() {
                 "3. Boa imagem no mercado de crédito é uma das vantagens do FIDC"
               }
               text={
-                "Os FIDCs são regulados pela CVM (Comissão de Valores Mobiliários) e tem como base legal a Resolução CMN nº 2907 e Instrução CVM 356. Ele é um fundo de investimento de renda fixa, organizado por uma instituição financeira e administrado por profissionais de mercado. Além disso, o FIDC permite alavancagem com investidores qualificados."
+                "Os FIDCs são regulados pela CVM (Comissão de Valores Mobiliários) e têm como base legal a Resolução CMN nº 2907 e Instrução CVM 356. Ele é um fundo de investimento de renda fixa, organizado por uma instituição financeira e administrado por profissionais de mercado. Além disso, o FIDC permite alavancagem com investidores qualificados."
               }
             />
             <FidcMiniArticle

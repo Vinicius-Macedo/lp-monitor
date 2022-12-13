@@ -12,7 +12,7 @@ export default function WealthManagement() {
       <HeroSectionGeneric
         title={"WEALTH MANAGEMENT"}
         text={
-          "Construímos planos em sinergia com os mercados globais e objetivos individuais, de forma personalizada, resiliente e completa, com rentabilidade real consistente"
+          "Construímos planos em sinergia com os mercados globais e objetivos individuais, de forma personalizada, resiliente e completa, com rentabilidade real e consistente."
         }
         imgAdress={"wealth-management/wealth-hero.png"}
         imgAlt={
@@ -35,24 +35,24 @@ export default function WealthManagement() {
             title={"FUNDOS EXCLUSIVOS"}
             subTopics={[
               {
-                text: "* Fundo de investimento exclusivo para empresas, indivíduos e famílias",
+                text: "- Fundo de investimento exclusivo para empresas, indivíduos e famílias",
               },
               {
-                text: "* Benefício do diferimento físcal.",
+                text: "- Benefício do diferimento físcal",
               },
-              { text: "* Ideal para planejamento patrímonial familiar" },
-              { text: "* Maiores possibilidades de investimentos " },
+              { text: "- Ideal para planejamento patrímonial familiar" },
+              { text: "- Maiores possibilidades de investimentos" },
             ]}
           />
           <CardSolucoes
             title={"CARTEIRAS ADMINISTRADAS"}
             subTopics={[
-              { text: "* Gestão profissional dos investimentos pessoais ." },
-              { text: "* Adequação ao perfil de risco." },
-              { text: "* Remuneração transparente e cas back integral." },
-              { text: "* Alinhamento de interesse." },
+              { text: "- Gestão profissional dos investimentos pessoais" },
+              { text: "- Adequação ao perfil de risco" },
+              { text: "- Remuneração transparente e cas back integral" },
+              { text: "- Alinhamento de interesse" },
               {
-                text: "* Acesso à produtos exclusivos das mesas institucionais.",
+                text: "- Acesso à produtos exclusivos das mesas institucionais",
               },
             ]}
           />
@@ -75,7 +75,7 @@ export default function WealthManagement() {
         <CardWealth
           title={"MODELAGEM E ALOCAÇÃO DE PORTFÓLIO"}
           text={
-            "São definidos previamente os modelos de alocação estratégica com o emprego de técnicas de modelagem quantitativas de estudo do portfólio como unidade sistêmica. Após a modelagem, são definidos as classes de ativos disponíveis, a exposição desejada e alocação de recursos entre as grandes classes de ativos"
+            "São definidos previamente os modelos de alocação estratégica com o emprego de técnicas de modelagem quantitativas de estudo do portfólio como unidade sistêmica. Após a modelagem, são definidas as classes de ativos disponíveis, a exposição desejada e alocação de recursos entre as grandes classes de ativos."
           }
           number={2}
           imgAdres={"wealth-management/icone-wealth-02.png"}
@@ -95,7 +95,7 @@ export default function WealthManagement() {
             "TESTES DE COMPATIBILIDADE DOS OBJETIVOS POR PORTFÓLIO EM TERMOS QUANTITATIVOS"
           }
           text={
-            "Condução de testes de compatibilidade dos objetos de retorno de risco do portfólio em termos quantitativos"
+            "Condução de testes de compatibilidade dos objetos de retorno e de risco do portfólio em termos quantitativos."
           }
           number={4}
           imgAdres={"wealth-management/icone-wealth-04.png"}

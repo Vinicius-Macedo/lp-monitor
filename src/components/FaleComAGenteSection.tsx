@@ -12,7 +12,7 @@ export default function FaleComAGenteSection() {
     >
       <div className="w-full max-w-[540px]">
         <h2 className="title-responsive text-blue font-black text-center mb-16 lg:mb-32">
-          FALE COM A GENTE
+          FALE CONOSCO
         </h2>
         <form className="flex flex-col gap-8">
           <div className="input-container">

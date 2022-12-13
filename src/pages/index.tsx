@@ -83,7 +83,7 @@ export default function Home() {
             <CardWithImage
               imgAdress={"home/icone-segurando-acoes.png"}
               imgAlt={"icone de ações"}
-              title={"VALORES"}
+              title={"MISSÃO"}
               text={
                 "Combinando experiência e inserção nos mercados local e internacional, a Titan Capital atua com uma abordagem customizada e de diferenciação para o cliente e procura oferecer uma qualidade superior em seus serviços"
               }
@@ -91,17 +91,17 @@ export default function Home() {
             <CardWithImage
               imgAdress={"home/icone-apresentacao.png"}
               imgAlt={"icone de apresentação"}
-              title={"VALORES"}
+              title={"ESTRATÉGIA DE GESTÃO"}
               text={
-                "Combinando experiência e inserção nos mercados local e internacional, a Titan Capital atua com uma abordagem customizada e de diferenciação para o cliente e procura oferecer uma qualidade superior em seus serviços"
+                "Com a indústria tradicional de fundos, focando em segmentos que trazem diversificação para nossos investidores, em um processo de investimento inovador."
               }
             />
             <CardWithImage
               imgAdress={"home/icone-aperto-de-mao.png"}
               imgAlt={"icone de aperto de mãos"}
-              title={"VALORES"}
+              title={"RELAÇÕES COM O INVESTIDOR"}
               text={
-                "Combinando experiência e inserção nos mercados local e internacional, a Titan Capital atua com uma abordagem customizada e de diferenciação para o cliente e procura oferecer uma qualidade superior em seus serviços"
+                "Acreditamos que uma relação próxima e transparente com os investidores e parceiros é a melhor forma de alinharmos os interesses e criarmos uma relação mútua de confiança com geração de valor."
               }
             />
           </div>
@@ -218,7 +218,7 @@ export default function Home() {
             />
           </div>
         </DefaultMarginSectionBg>
-        <FaleComAGenteSection/>
+        <FaleComAGenteSection />
       </main>
     </>
   );

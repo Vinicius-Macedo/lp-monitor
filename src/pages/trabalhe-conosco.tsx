@@ -8,7 +8,7 @@ export default function TrabalheConosco() {
   return (
     <main>
       <HeroSectionGeneric
-        title={"TRABALHE COM A GENTE"}
+        title={"TRABALHE CONOSCO"}
         text={"Construa sua carreira na Titan"}
         imgAdress={"trabalhe-conosco/trabalhe-conosco.webp"}
         imgAlt={"Imagem abstrata de tecnologia sobre trabalho em quipe"}
@@ -20,7 +20,7 @@ export default function TrabalheConosco() {
       >
         <div className="w-full max-w-[540px] bg-darkblue">
           <h2 className="title-responsive text-blue font-black text-center">
-            FALE COM A GENTE
+            TRABALHE COM A GENTE
           </h2>
           <p className="text-center text-white my-8">
             Nossos valores: Combinamos diferentes expertises pautadas em
