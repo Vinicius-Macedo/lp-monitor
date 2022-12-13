@@ -75,7 +75,7 @@ export default function Footer() {
         >
           <Link href={"/termos-de-uso"} className="hover:underline" >Termos e Condições</Link>
           <Link href={"/politica-de-privacidade"} className="hover:underline">Política de Privacidade</Link>
-          <Link href={"/"} className="hover:underline">Contato</Link>
+          <Link href={"/trabalhe-conosco"} className="hover:underline">Contato</Link>
         </div>
       </div>
     </footer>
