@@ -118,12 +118,15 @@ html {
 
   .casal-foto {
     flex-shrink: 0;
+    object-fit: cover;
+    object-position: bottom center;
 
     width: 100%;
     max-width: 410px;
 
     @include xl {
       max-width: 540px;
+      max-height: 540px;
     }
   }
 
