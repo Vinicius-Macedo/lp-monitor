@@ -13,13 +13,13 @@ export default function Footer() {
             "px-8 py-32 sm:px-16 xl:px-0 xl:w-[1110px] xl:m-auto text-white flex flex-col flex-gap gap-16"
           }
         >
-          <div className="flex flex-col gap-16">
-            <h2 className="text-white font-bold text-[24px]">DISCLAIMER</h2>
-            <p className="font-semibold">
+          <div className="flex flex-col gap-8">
+            <h2 className="text-white font-semibold text-[16px]">DISCLAIMER</h2>
+            <p className="font-semibold text-[12px]">
               ANBIMA - ASSOCIAÇÃO BRASILEIRA DAS ENTIDADES DOS MERCADOS
               FINANCEIRO E DE CAPITAIS
             </p>
-            <p className="font-semibold">
+            <p className="font-semibold text-[12px]">
               A Titan Capital Gestão de Recursos não comercializa nem distribui
               cotas de fundos de investimentos ou qualquer outro ativo
               financeiro. As informações contidas nesse website são de caráter
@@ -29,16 +29,16 @@ export default function Footer() {
               FGC. A rentabilidade passada não representa garantia de
               rentabilidade futura.
             </p>
-            <p className="text-[22px]">contato@titancapital.com.br</p>
+            <p className="text-[12px]">contato@titancapital.com.br</p>
           </div>
           <div className="flex flex-wrap gap-16 xl:gap-32 items-center lg:items-start justify-center lg:justify-between">
-            <div className="w-full lg:max-w-[445px] flex flex-col gap-16">
-              <p className="font-bold">ENDEREÇOS</p>
-              <p>
+            <div className="w-full lg:max-w-[445px] flex flex-col gap-8">
+              <p className="font-bold text-[14px]">ENDEREÇOS</p>
+              <p className="text-[12px]">
                 MINAS GERAIS - Av. Raja Gabáglia, 4000, 4º andar, sala nº 425
                 Cidade Jardim – CEP 30494-310 Tel.: (31) 3656-4979
               </p>
-              <p>
+              <p className="text-[12px]">
                 SÃO PAULO - The First Offices - R. Paulo César Fidélis, 39 -
                 Lot. Res. Vila Bella, Campinas - SP, 13087-727
               </p>
@@ -73,9 +73,9 @@ export default function Footer() {
             "px-8 py-8 sm:px-16 xl:px-0 xl:w-[1110px] xl:m-auto text-white flex flex-col sm:flex-row sm:flex-wrap gap-16"
           }
         >
-          <Link href={"/termos-de-uso"} className="hover:underline" >Termos e Condições</Link>
-          <Link href={"/politica-de-privacidade"} className="hover:underline">Política de Privacidade</Link>
-          <Link href={"/trabalhe-conosco"} className="hover:underline">Contato</Link>
+          <Link href={"/termos-de-uso"} className="hover:underline text-[14px]" >Termos e Condições</Link>
+          <Link href={"/politica-de-privacidade"} className="hover:underline text-[14px]">Política de Privacidade</Link>
+          <Link href={"/trabalhe-conosco"} className="hover:underline text-[14px]">Contato</Link>
         </div>
       </div>
     </footer>

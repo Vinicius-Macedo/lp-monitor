@@ -34,7 +34,7 @@ export function HeroSectionGeneric(props: HeroSectionGenericProps) {
             ""
           )}
         </div>
-        <SocialMediaIcons className="w-full justify-center lg:justify-start xl:justify-end" />
+        {/* <SocialMediaIcons className="w-full justify-center lg:justify-start xl:justify-end" /> */}
       </div>
 
       <Image
