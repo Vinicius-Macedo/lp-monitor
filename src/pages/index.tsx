@@ -28,7 +28,7 @@ export default function Home() {
               unoptimized
               priority
             />
-            <SocialMediaIcons className="w-full justify-center xl:justify-end" />
+            {/* <SocialMediaIcons className="w-full justify-center xl:justify-end" /> */}
           </div>
 
           <Image
