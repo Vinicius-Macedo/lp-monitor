@@ -31,7 +31,6 @@ export default function FundosExclusivos() {
         </p>
       </DefaultMarginSection> */}
       <DefaultMarginSectionBg
-        hasNoMarginTop={true}
         className="flex justify-center items-center"
         isBackgroundImage={false}
         backgroundClass={"bg-[#000000]"}
@@ -51,7 +50,7 @@ export default function FundosExclusivos() {
         isBackgroundImage={false}
         backgroundClass={"bg-[#000000]"}
       >
-        <h2 className="title-responsive font-bold text-blue text-center xl:text-left">
+        <h2 className="title-responsive font-bold text-blue text-center">
           ETAPAS
         </h2>
         <div className="flex flex-wrap justify-center max-w-[540px] xl:max-w-none gap-15 m-auto">
