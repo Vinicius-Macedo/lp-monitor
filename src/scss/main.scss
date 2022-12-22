@@ -19,6 +19,10 @@ html {
 
 @import "components/partner-card";
 
+.hover-p-style:hover p {
+  text-decoration: underline;
+}
+
 // GAMB
 .padding-top-secao {
   @apply pt-32 lg:pt-64;
@@ -326,3 +330,15 @@ html {
   }
 }
 
+.dotted-after {
+  display: flex;
+  width: 100%;
+
+  &:after {
+    border-bottom: 2px dotted #d9b056;
+    margin-left: 12px;
+    margin-bottom: 16.875px;
+    content: "";
+    flex: 1;
+  }
+}

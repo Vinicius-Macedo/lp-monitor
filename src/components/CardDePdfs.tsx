@@ -39,7 +39,7 @@ export default function CardDePdfs(props: CardDePdfsProps) {
             <Link
               className="li-pdf-link"
               target={"_blank"}
-              href={"" + removeSpacesAndAccents(pdf.title)}
+              href={removeSpacesAndAccents(pdf.title) + ".pdf"}
             >
               <Image
                 src={"documentos/icone-pdf.png"}

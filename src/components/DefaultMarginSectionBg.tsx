@@ -9,6 +9,9 @@ type DefaultMarginSectionProps = {
   backgroundClass?: string;
   imgAdress?: any;
   imgAlt?: any;
+  id?: string;
+  hasNoMarginTop?: boolean;
+  hasNoMarginBottom?: boolean;
 };
 
 export function DefaultMarginSectionBg(props: DefaultMarginSectionProps) {
@@ -22,7 +25,9 @@ export function DefaultMarginSectionBg(props: DefaultMarginSectionProps) {
       >
         <div
           className={
-            `px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1110px] xl:m-auto` +
+            "px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1110px] xl:m-auto" +
+            (props.hasNoMarginTop ? " xl:pt-0" : "") +
+            (props.hasNoMarginBottom ? " xl:pb-0" : "") +
             (props.className ? " " + props.className : "")
           }
         >
@@ -33,6 +38,7 @@ export function DefaultMarginSectionBg(props: DefaultMarginSectionProps) {
             src={props.imgAdress}
             alt={props.imgAlt}
             loader={imgLoader}
+            unoptimized={true}
             style={{ zIndex: -1, objectFit: "cover", objectPosition: "center" }}
             fill
           />

@@ -27,7 +27,7 @@ export default function WealthManagement() {
           construímos portfólios de investimentos personalizados, resilientes e
           impactantes com retornos reais sustentáveis.
         </p>
-        <h2 className="title-responsive text-blue text-center font-black">
+        <h2 className="title-responsive text-blue text-center font-bold">
           NOSSAS SOLUÇÕES
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 justify-center">

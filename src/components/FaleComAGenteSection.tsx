@@ -1,5 +1,6 @@
 // React export function
 
+import imageLoader from "../loader";
 import { DefaultMarginSectionBg } from "./DefaultMarginSectionBg";
 
 export default function FaleComAGenteSection() {
@@ -11,7 +12,7 @@ export default function FaleComAGenteSection() {
       className="flex flex-col gap-16 lg:gap-32"
     >
       <div className="w-full max-w-[540px]">
-        <h2 className="title-responsive text-blue font-black text-center mb-16 lg:mb-32">
+        <h2 className="title-responsive text-blue font-bold text-center mb-16 lg:mb-32">
           FALE CONOSCO
         </h2>
         <form className="flex flex-col gap-8">

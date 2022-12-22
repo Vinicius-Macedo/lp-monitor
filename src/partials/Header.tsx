@@ -10,7 +10,7 @@ export function Header() {
   return (
     <header className="header">
       <nav className={"menu" + (isMenuOpen ? " open" : "")}>
-        <Link href="/" className="xl:hidden">
+        <Link href="/" className="xl:hidden" as="image">
           <figure className="relative w-[80px] h-[40px]">
             <Image
               src="logo-titan.png"
@@ -35,8 +35,8 @@ export function Header() {
             </Link>
           </li>
           <li className="item">
-            <Link href="/fidc" className="link">
-              FIDC
+            <Link href="/fundos-exclusivos" className="link">
+              FUNDOS EXCLUSIVOS
             </Link>
           </li>
           <li className="item">

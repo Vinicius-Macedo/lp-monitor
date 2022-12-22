@@ -7,31 +7,34 @@ import imageLoader from "../loader";
 import FidcMiniArticle from "../components/FidcMiniArticle";
 import FaleComAGenteSection from "../components/FaleComAGenteSection";
 import CardGeometric from "../components/CardGeometric";
+import { DefaultMarginSectionBg } from "../components/DefaultMarginSectionBg";
 
-export default function Fidc() {
+export default function FundosExclusivos() {
   var marginLeft = "xl:-ml-20";
 
   return (
     <main>
       <HeroSectionGeneric
-        title={"FIDC"}
+        title={"FUNDOS EXCLUSIVOS"}
         text={
           "ANTECIPAÇÃO DE RECEBÍVEIS, FEITA SOB MEDIDA, ATRAVÉS DA ESTRUTURAÇÃO DA FIDC's."
         }
         imgAdress={"fidc/fidc-hero.png"}
         imgAlt={"Imagem abstrata de gráficos misturado com moedas físicas"}
       />
-      <DefaultMarginSection>
+      {/* <DefaultMarginSection>
         <p className="text-center text-[20px] md:text-[32px]">
-          <span className="text-blue font-black">FIDC</span> é a sigla para
+          <span className="text-blue font-bold">FIDC</span> é a sigla para
           Fundo de Investimento em Direitos Creditórios. É um fundo de
           investimento que aplica em títulos de crédito criados a partir de
           contas a receber de uma determinada empresa.
         </p>
-      </DefaultMarginSection>
-      <DefaultMarginSection
+      </DefaultMarginSection> */}
+      <DefaultMarginSectionBg
         hasNoMarginTop={true}
         className="flex justify-center items-center"
+        isBackgroundImage={false}
+        backgroundClass={"bg-[#000000]"}
       >
         <Image
           src={"fidc/fluxograma-fidc.png"}
@@ -41,12 +44,14 @@ export default function Fidc() {
           width={961}
           height={456}
         />
-      </DefaultMarginSection>
-      <DefaultMarginSection
+      </DefaultMarginSectionBg>
+      <DefaultMarginSectionBg
         hasNoMarginTop={true}
         className="flex flex-col gap-16 lg:gap-32"
+        isBackgroundImage={false}
+        backgroundClass={"bg-[#000000]"}
       >
-        <h2 className="title-responsive font-black text-blue text-center xl:text-left">
+        <h2 className="title-responsive font-bold text-blue text-center xl:text-left">
           ETAPAS
         </h2>
         <div className="flex flex-wrap justify-center max-w-[540px] xl:max-w-none gap-15 m-auto">
@@ -71,10 +76,10 @@ export default function Fidc() {
             text={"FIDC COMPRA OS DIREITOS CREDITÓRIOS"}
           />
         </div>
-      </DefaultMarginSection>
+      </DefaultMarginSectionBg>
       <DefaultMarginSection className="flex flex-col-reverse items-center gap-16 lg:grid lg:grid-cols-2 lg:items-start">
         <article className="flex flex-col gap-16">
-          <h2 className="title-responsive font-black text-blue text-center xl:text-left">
+          <h2 className="title-responsive font-bold text-blue text-center xl:text-left">
             VANTAGENS FIDC
           </h2>
           <div className="flex flex-col gap-16">
@@ -115,7 +120,10 @@ export default function Fidc() {
           height={654}
         />
       </DefaultMarginSection>
-      <DefaultMarginSection className="flex flex-wrap justify-center m-auto w-full max-w-[900px] xl:max-w-none xl:flex-nowrap" hasNoMarginTop={true}>
+      <DefaultMarginSection
+        className="flex flex-wrap justify-center m-auto w-full max-w-[900px] xl:max-w-none xl:flex-nowrap"
+        hasNoMarginTop={true}
+      >
         <CardGeometric
           text={"DIAGNÓSTICO CONJUNTO"}
           imgAdress={"fidc/card-fidc-01.png"}

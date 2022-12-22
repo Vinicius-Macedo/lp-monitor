@@ -18,6 +18,33 @@ export default function Documentos() {
         <CardDePdfs
           cardTitle={"POLÍTICAS E MANUAIS"}
           pdfs={[
+            { title: "Lâmina - DEEP BLUE" },
+            { title: "Lâmina - FIA ADVANCED" },
+            { title: "Lâmina - FIA CHRONOS" },
+            { title: "Lâmina - FIC FIM TITAN CAPITAL" },
+            {
+              title: "Lâmina - FIQ FIDC VIA",
+            },
+            {
+              title: "Lâmina - WISE SELECTION",
+            },
+            { title: "Regulamento - DEEP BLUE" },
+            { title: "Regulamento - FIA ADVANCED" },
+            {
+              title: "Regulamento - FIA CHRONOS",
+            },
+            {
+              title: "Regulamento - FIC FIM TITAN CAPITAL",
+            },
+            { title: "Regulamento - FIQ FIDC VIA" },
+            { title: "Regulamento - WISE CASH" },
+            { title: "Regulamento - WISE PREV" },
+            { title: "Regulamento - WISE SELECTION" },
+          ]}
+        />
+        {/* <CardDePdfs
+          cardTitle={"POLÍTICAS E MANUAIS"}
+          pdfs={[
             { title: "Formulário de Referência – Anexo 15-II ICVM 558 2021" },
             { title: "Manual de Compliance 2021" },
             { title: "Padrões de Conduta – O Código de Ética e Conduta 2019" },
@@ -66,7 +93,7 @@ export default function Documentos() {
             { title: "2014 – Quadro Resumo das Participações em Assembléias" },
             { title: "2015 – Quadro Resumo das Participações em Assembléias" },
           ]}
-        />
+        /> */}
       </DefaultMarginSection>
     </main>
   );

@@ -106,30 +106,33 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col gap-16 lg:gap-32">
-            <h2 className="title-responsive text-blue font-black text-center">
+            <h2 className="title-responsive text-blue font-bold text-center">
               NOSSOS NUMEROS CRESCEM TODOS OS DIAS
             </h2>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-32">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-15">
               <GrowingNumberCard
-                number={"00"}
+                number={14}
                 description={"ANOS DE EXPERIÊNCIA"}
                 hasPlusIcon={false}
+                hasMi={false}
               />
               <GrowingNumberCard
-                number={"00"}
+                number={10}
                 description={"PROFISSIONAIS"}
                 hasPlusIcon={true}
+                hasMi={false}
               />
               <GrowingNumberCard
-                number={"00"}
+                number={400}
                 description={"ATIVOS SOB GESTÃO"}
                 hasPlusIcon={false}
+                hasMi={true}
               />
             </div>
           </div>
         </DefaultMarginSectionBg>
         <DefaultMarginSection className="flex flex-col ga-16 lg:gap-32">
-          <h2 className="title-responsive text-blue font-black text-center">
+          <h2 className="title-responsive text-blue font-bold text-center">
             PRODUTOS
           </h2>
           <div className="flex flex-wrap justify-center gap-16 lg:gap-32">
@@ -150,11 +153,13 @@ export default function Home() {
             />
           </div>
         </DefaultMarginSection>
-        <DefaultMarginSection
-          hasNoMarginTop={false}
-          className="flex flex-col items-center gap-16 lg:gap-32"
+        <section
+          className={
+            "px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1210px] xl:m-auto" +
+            " flex flex-col items-center gap-16 lg:gap-32"
+          }
         >
-          <h2 className="title-responsive text-blue font-black text-center">
+          <h2 className="title-responsive text-blue font-bold text-center">
             HISTÓRICO DA GESTORA
           </h2>
           <p className="text-center">
@@ -163,29 +168,29 @@ export default function Home() {
             de investimento com foco na compra e venda de ativos e derivativos
             nos mercados americano e europeu.
           </p>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Image
-              src={"home/historia-vertical.png"}
+              src={"home/linha-do-tempo-vertifcal.svg"}
               alt={"História da Titan Capital"}
-              height={909}
-              width={269}
+              height={1210}
+              width={333}
               style={{ objectFit: "contain", width: "269px", height: "909px" }}
               unoptimized
               loader={imageLoader}
             />
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Image
-              src={"home/historia-horizontal.png"}
+              src={"home/linha-do-tempo.svg"}
               alt={"História da Titan Capital"}
-              height={133}
-              width={774}
-              style={{ objectFit: "contain", width: "774px", height: "133px" }}
+              height={1147}
+              width={336}
+              style={{ objectFit: "contain", width: "1147px", height: "336px" }}
               unoptimized
               loader={imageLoader}
             />
           </div>
-        </DefaultMarginSection>
+        </section>
         <DefaultMarginSectionBg
           className="flex flex-col gap-16 lg:gap-32 -z-[10]"
           backgroundClass="bg-dark"

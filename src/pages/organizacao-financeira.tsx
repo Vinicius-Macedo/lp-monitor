@@ -162,7 +162,7 @@ export default function OrganizacaoFinanceira() {
           <article className="texto-container">
             <p className="texto-responsivo-big text-center">
               Hoje,{" "}
-              <span className="text-blue font-black">
+              <span className="text-blue font-bold">
                 aproximadamente 1% dos aposentados
               </span>{" "}
               conseguem manter o padrão de vida que tinham antes de se

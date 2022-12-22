@@ -19,7 +19,7 @@ export default function TrabalheConosco() {
         isBackgroundImage={false}
       >
         <div className="w-full max-w-[540px] bg-darkblue">
-          <h2 className="title-responsive text-blue font-black text-center">
+          <h2 className="title-responsive text-blue font-bold text-center">
             TRABALHE COM A GENTE
           </h2>
           <p className="text-center text-white my-8">
