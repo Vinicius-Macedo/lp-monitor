@@ -28,7 +28,6 @@ type CardInvestmentFundsProps = {
 
 type Documentos = {
   nome: string;
-  url: string;
 };
 
 export default function CardInvestmentFunds(props: CardInvestmentFundsProps) {
@@ -41,6 +40,16 @@ export default function CardInvestmentFunds(props: CardInvestmentFundsProps) {
         : "auto";
     }
   }, [isModalOpen]);
+
+  function removeSpacesAndAccents(str: string) {
+    return str
+      .trim()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-zA-Z0-9 ]/g, "")
+      .replace(/\s/g, "-")
+      .toLowerCase();
+  }
 
   function isMobile() {
     return window.innerWidth <= 768;
@@ -160,7 +169,7 @@ export default function CardInvestmentFunds(props: CardInvestmentFundsProps) {
                     <div className="flex flex-col gap-8">
                       {props.documentosArray.map((documento, i) => (
                         <a
-                          href={documento.url}
+                          href={removeSpacesAndAccents(documento.nome) + ".pdf"}
                           key={i}
                           className="flex justify-between items-center hover-p-style"
                         >

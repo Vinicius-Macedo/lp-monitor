@@ -32,7 +32,10 @@ export default function FundosDeInvestimento() {
             resgate={"D+6"}
             rentabilidadeDeDozeMeses={"6,02%"}
             risco={"Sofisticado"}
-            documentosArray={[]}
+            documentosArray={[
+              { nome: "Lâmina - FIC FIM TITAN CAPITAL" },
+              { nome: "Regulamento - FIC FIM TITAN CAPITAL" },
+            ]}
             objetivoDescricao={
               "Obter ganhos de capital mediante operações nos mercados de juros, câmbio, ações, commodities e dívida, utilizando-se de instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos."
             }
@@ -52,7 +55,10 @@ export default function FundosDeInvestimento() {
             resgate={"D+3"}
             rentabilidadeDeDozeMeses={"7,87%"}
             risco={"Sofisticado"}
-            documentosArray={[]}
+            documentosArray={[
+              { nome: "Lâmina - DEEP BLUE" },
+              { nome: "Regulamento - DEEP BLUE" },
+            ]}
             objetivoDescricao={
               "O Smart Fund Deep Blue FIM é composto exclusivamente por títulos públicos e utiliza como parâmetro o índice IMA-B. Com suave alavancagem, a alocação e balanceamento da carteira visam como objetivo, a ampliação de retorno com volatilidade palatável ao cliente de renda fixa."
             }
@@ -72,7 +78,10 @@ export default function FundosDeInvestimento() {
             resgate={"D+5"}
             rentabilidadeDeDozeMeses={"9,71%"}
             risco={"Sofisticado"}
-            documentosArray={[]}
+            documentosArray={[
+              { nome: "Lâmina - FIA ADVANCED" },
+              { nome: "Regulamento - FIA ADVANCED" },
+            ]}
             objetivoDescricao={
               "O fundo tem por objetivo proporcionar aos seus cotistas, a médio e longo prazo, ganhos de capital por meio do investimento de seus recursos primordialmente no mercado acionário, sem perseguir uma alta correlação com qualquer índice de ações específico disponível."
             }
@@ -92,7 +101,10 @@ export default function FundosDeInvestimento() {
             resgate={"D+6"}
             rentabilidadeDeDozeMeses={"5,50% (10 meses de existência)"}
             risco={"Sofisticado"}
-            documentosArray={[]}
+            documentosArray={[
+              { nome: "Lâmina - FIA CHRONOS" },
+              { nome: "Regulamento - FIA CHRONOS" },
+            ]}
             objetivoDescricao={
               "O fundo tem por objetivo proporcionar aos seus cotistas, a médio e longo prazo, ganhos de capital por meio do investimento de seus recursos primordialmente no mercado acionário, sem perseguir uma alta correlação com qualquer índice de ações específico disponível."
             }
@@ -112,7 +124,7 @@ export default function FundosDeInvestimento() {
             resgate={"D+1"}
             rentabilidadeDeDozeMeses={"Divulgação ainda não permitida"}
             risco={"Conservador"}
-            documentosArray={[]}
+            documentosArray={[{ nome: "Regulamento - WISE CASH" }]}
             objetivoDescricao={
               "O objetivo do fundo é obter retornos atrelados ao CDI através de operações de títulos públicos e crédito privado com crédito de alta qualidade. Exposição em debentures com alta liquidez no mercado secundário e baixo risco de crédito. Portifólio diversificado e defensivo. O fundo mantém uma carteira diversificada de ativos financeiros, sem concentração por ativo ou setor."
             }
@@ -132,7 +144,7 @@ export default function FundosDeInvestimento() {
             resgate={"D+9"}
             rentabilidadeDeDozeMeses={"Divulgação ainda não permitida"}
             risco={"Sofisticado"}
-            documentosArray={[]}
+            documentosArray={[{ nome: "Regulamento - WISE PREV" }]}
             objetivoDescricao={
               "Superar o CDI a longo prazo, por meio de uma estratégia de retorno absoluto."
             }
@@ -154,7 +166,10 @@ export default function FundosDeInvestimento() {
               "Sênior: 14,24% - Mezanino: 15,28% - Subordinada: 16,45%"
             }
             risco={""}
-            documentosArray={[]}
+            documentosArray={[
+              { nome: "Lâmina - FIQ FIDC VIA" },
+              { nome: "Regulamento - FIQ FIDC VIA" },
+            ]}
             objetivoDescricao={
               "O objetivo do Fundo é proporcionar aos seus quotistas (“Quotistas”), observada a política de investimento e composição de carteira definida neste Regulamento, valorização de suas quotas (“Quotas”), por meio da aquisição pelo Fundo de quotas de emissão de Fundos de Investimento em Direitos Creditórios."
             }
@@ -176,7 +191,10 @@ export default function FundosDeInvestimento() {
             rentabilidadeDeDozeMeses={"9,94%"}
             risco={"Alto"}
             rating={""}
-            documentosArray={[]}
+            documentosArray={[
+              { nome: "Lâmina - FIC FIM TITAN CAPITAL" },
+              { nome: "Regulamento - FIC FIM TITAN CAPITAL" },
+            ]}
             objetivoDescricao={
               "Objetivo é investir em Fundos de Investimentos em Direitos Creditórios (FIDCs) ou outros fundos que invistam em FIDCs."
             }
