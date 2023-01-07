@@ -30,7 +30,7 @@ export default function FundosExclusivos() {
           contas a receber de uma determinada empresa.
         </p>
       </DefaultMarginSection> */}
-      <DefaultMarginSectionBg
+      {/* <DefaultMarginSectionBg
         className="flex justify-center items-center"
         isBackgroundImage={false}
         backgroundClass={"bg-[#000000]"}
@@ -43,12 +43,11 @@ export default function FundosExclusivos() {
           width={961}
           height={456}
         />
-      </DefaultMarginSectionBg>
+      </DefaultMarginSectionBg> */}
       <DefaultMarginSectionBg
-        hasNoMarginTop={true}
         className="flex flex-col gap-16 lg:gap-32"
         isBackgroundImage={false}
-        backgroundClass={"bg-[#000000]"}
+        backgroundClass={"bg-[#ffffff]"}
       >
         <h2 className="title-responsive font-bold text-blue text-center">
           ETAPAS

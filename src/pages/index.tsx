@@ -191,7 +191,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <DefaultMarginSectionBg
+        {/* <DefaultMarginSectionBg
           className="flex flex-col gap-16 lg:gap-32 -z-[10]"
           backgroundClass="bg-dark"
           isBackgroundImage={false}
@@ -222,7 +222,7 @@ export default function Home() {
               }
             />
           </div>
-        </DefaultMarginSectionBg>
+        </DefaultMarginSectionBg> */}
         <FaleComAGenteSection />
       </main>
     </>

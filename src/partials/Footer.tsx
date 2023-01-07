@@ -73,9 +73,15 @@ export default function Footer() {
             "px-8 py-8 sm:px-16 xl:px-0 xl:w-[1110px] xl:m-auto text-white flex flex-col sm:flex-row sm:flex-wrap gap-16"
           }
         >
-          <Link href={"/termos-de-uso"} className="hover:underline text-[14px]" >Termos e Condições</Link>
-          <Link href={"/politica-de-privacidade"} className="hover:underline text-[14px]">Política de Privacidade</Link>
-          <Link href={"/trabalhe-conosco"} className="hover:underline text-[14px]">Contato</Link>
+          <Link
+            href={"/politica-de-privacidade"}
+            className="hover:underline text-[14px]"
+          >
+            Política de Privacidade
+          </Link>
+          <Link href={"/contato"} className="hover:underline text-[14px]">
+            Contato
+          </Link>
         </div>
       </div>
     </footer>

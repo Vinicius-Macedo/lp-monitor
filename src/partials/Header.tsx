@@ -68,7 +68,7 @@ export function Header() {
             </Link>
           </li>
           <li className="item">
-            <Link href="/trabalhe-conosco" className="link">
+            <Link href="/contato" className="link">
               CONTATO
             </Link>
           </li>

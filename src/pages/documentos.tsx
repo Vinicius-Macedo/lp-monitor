@@ -18,28 +18,64 @@ export default function Documentos() {
         <CardDePdfs
           cardTitle={"POLÍTICAS E MANUAIS"}
           pdfs={[
-            { title: "Lâmina - DEEP BLUE" },
-            { title: "Lâmina - FIA ADVANCED" },
-            { title: "Lâmina - FIA CHRONOS" },
-            { title: "Lâmina - FIC FIM TITAN CAPITAL" },
+            { title: "Formulário de Referência CVM - 558" },
+            { title: "PG19.00.04 Política de Gestão de Risco em Liquidez" },
             {
-              title: "Lâmina - FIQ FIDC VIA",
+              title:
+                "PG19.00.05 Política de Exercício de Direito ao Voto - FII",
             },
             {
-              title: "Lâmina - WISE SELECTION",
+              title:
+                "PG19.00.06 Política de Exercício de Direito ao Voto em Assembleia Geral",
             },
-            { title: "Regulamento - DEEP BLUE" },
-            { title: "Regulamento - FIA ADVANCED" },
+            { title: "PG19.00.08 Política Integrada de Gestão de Riscos" },
+            { title: "PG19.00.09 Política de Rateio e Divisão de Ordens" },
+            { title: "PG19.00.16 - Política de Compliance e Controles" },
+            { title: "PO19.00.00.02 Manual de Compliance" },
+            { title: "PO19.00.00.03 Código de Ética e Conduta" },
+            // { title: "Lâmina - DEEP BLUE" },
+            // { title: "Lâmina - FIA ADVANCED" },
+            // { title: "Lâmina - FIA CHRONOS" },
+            // { title: "Lâmina - FIC FIM TITAN CAPITAL" },
+            // {
+            //   title: "Lâmina - FIQ FIDC VIA",
+            // },
+            // {
+            //   title: "Lâmina - WISE SELECTION",
+            // },
+            // { title: "Regulamento - DEEP BLUE" },
+            // { title: "Regulamento - FIA ADVANCED" },
+            // {
+            //   title: "Regulamento - FIA CHRONOS",
+            // },
+            // {
+            //   title: "Regulamento - FIC FIM TITAN CAPITAL",
+            // },
+            // { title: "Regulamento - FIQ FIDC VIA" },
+            // { title: "Regulamento - WISE CASH" },
+            // { title: "Regulamento - WISE PREV" },
+            // { title: "Regulamento - WISE SELECTION" },
+            { title: "Formulário de Referência – Anexo 15-II ICVM 558 2021" },
+            { title: "Manual de Compliance 2021" },
+            { title: "Padrões de Conduta – O Código de Ética e Conduta 2019" },
+            { title: "Políticas e Normas para Controles Internos 2019" },
             {
-              title: "Regulamento - FIA CHRONOS",
+              title:
+                "Política para Investimentos Pessoais e Insider Trading 2020",
             },
             {
-              title: "Regulamento - FIC FIM TITAN CAPITAL",
+              title:
+                "Política de Rateio e Divisão de Ordens entre Carteiras de Valores Mobiliários 2019",
             },
-            { title: "Regulamento - FIQ FIDC VIA" },
-            { title: "Regulamento - WISE CASH" },
-            { title: "Regulamento - WISE PREV" },
-            { title: "Regulamento - WISE SELECTION" },
+            { title: "Manual Interno de Gestão de Riscos 2019" },
+            { title: "Política de Gestão de Risco de Liquidez 2019" },
+            {
+              title: "Política de Gestão e Avaliação de Risco de Crédito 2021",
+            },
+            {
+              title:
+                "Política de Gestão e Avaliação de Risco de Mercado e Taxa de Juros 2019",
+            },
           ]}
         />
         {/* <CardDePdfs

@@ -1,0 +1,43 @@
+.politica-de-privacidade-container {
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-weight: 600;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  ol {
+    list-style: lower-alpha;
+    list-style-position: inside;
+  }
+}
