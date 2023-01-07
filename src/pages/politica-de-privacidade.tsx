@@ -191,7 +191,7 @@ export default function politicaDePrivacidade() {
               <h3>5.2 DIRETRIZES</h3>
               <p>
                 Esclarecer quais dados pessoais são coletados dos usuários dos
-                Serviços <span className="font-bold">("VOCÊ")</span> e a forma
+                Serviços <span className="font-bold">(&quot;VOCÊ&quot;)</span> e a forma
                 de tratamento de tais dados pessoais no contexto da prestação
                 dos Serviços. É prioridade da{" "}
                 <span className="font-bold">TITAN</span> proteger, preservar e

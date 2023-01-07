@@ -26,8 +26,6 @@ export default function GrowingNumberCard(props: GrowingNumberCardProps) {
     oberver.observe(ref.current);
 
     if (currentNumberRef.current <= props.number && isVisible) {
-      console.log("passou no currentNumber <= props.number && isVisible");
-
       growNumbersRef.current = setInterval(() => {
         if (currentNumberRef.current == props.number) {
           clearInterval(growNumbersRef.current);
@@ -37,7 +35,6 @@ export default function GrowingNumberCard(props: GrowingNumberCardProps) {
         }
       }, 1000 / props.number);
     } else {
-      console.log("primeiro else");
       clearInterval(growNumbersRef.current);
     }
   }, [isVisible]);
