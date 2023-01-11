@@ -19,7 +19,7 @@ export default function FundosDeInvestimento() {
         </h2>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-16 lg:w-[800px] xl:w-full lg:m-auto">
           <CardInvestmentFunds
-            title={"FIC FIM WISE SELECTION"}
+            title={"Wise Selection FIC FIM CP"}
             objetivo={"Superar o CDI"}
             prazoDeAplicao={"D+1"}
             prazoDeResgate={"D+6"}
@@ -30,19 +30,19 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"0,00%"}
             certificaoAnbima={"Multimercado livre"}
             resgate={"D+6"}
-            rentabilidadeDeDozeMeses={"6,02%"}
+            rentabilidade={"5,56%"}
             risco={"Sofisticado"}
             documentosArray={[
               { nome: "Lâmina - FIC FIM TITAN CAPITAL" },
               { nome: "Regulamento - FIC FIM TITAN CAPITAL" },
             ]}
             objetivoDescricao={
-              "Obter ganhos de capital mediante operações nos mercados de juros, câmbio, ações, commodities e dívida, utilizando-se de instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos."
+              "O Wise Selection tem como objetivo obter ganhos de capital mediante investimento em cotas de fundos de investimento que realizam operações nos mercados de juros, câmbio, ações, commodities e dívida, utilizando-se de instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos."
             }
             rating={""}
           />
           <CardInvestmentFunds
-            title={"FIM DEEP BLUE"}
+            title={"Smart Fund Deep Blue FIM"}
             objetivo={"Superar o CDI"}
             prazoDeAplicao={"D+0"}
             prazoDeResgate={"D+3"}
@@ -53,7 +53,7 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"0,00%"}
             certificaoAnbima={"Multimercado livre"}
             resgate={"D+3"}
-            rentabilidadeDeDozeMeses={"7,87%"}
+            rentabilidade={"7,83%"}
             risco={"Sofisticado"}
             documentosArray={[
               { nome: "Lâmina - DEEP BLUE" },
@@ -65,7 +65,7 @@ export default function FundosDeInvestimento() {
             rating={""}
           />
           <CardInvestmentFunds
-            title={"FIA ADVANCED"}
+            title={"FIA Advanced BDR N1"}
             objetivo={"Superar o BDRX"}
             prazoDeAplicao={"D+0"}
             prazoDeResgate={"D+5"}
@@ -76,7 +76,7 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"25% do que exceder o IBOVESPA"}
             certificaoAnbima={"Ações livre"}
             resgate={"D+5"}
-            rentabilidadeDeDozeMeses={"9,71%"}
+            rentabilidade={"6,46%"}
             risco={"Sofisticado"}
             documentosArray={[
               { nome: "Lâmina - FIA ADVANCED" },
@@ -88,7 +88,7 @@ export default function FundosDeInvestimento() {
             rating={""}
           />
           <CardInvestmentFunds
-            title={"FIA CHRONOS"}
+            title={"Chronos FIA 1 Titan Capital"}
             objetivo={"Superar o IBOVESPA"}
             prazoDeAplicao={"D+1"}
             prazoDeResgate={"D+6"}
@@ -99,7 +99,8 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"20% do que exceder o IBOVESPA"}
             certificaoAnbima={"Ações livre"}
             resgate={"D+6"}
-            rentabilidadeDeDozeMeses={"5,50% (10 meses de existência)"}
+            RentabilidadeTipo={11}
+            rentabilidade={"5,31%"}
             risco={"Sofisticado"}
             documentosArray={[
               { nome: "Lâmina - FIA CHRONOS" },
@@ -122,7 +123,8 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"0,00%"}
             certificaoAnbima={"RF duração livre grau de investimento"}
             resgate={"D+1"}
-            rentabilidadeDeDozeMeses={"Divulgação ainda não permitida"}
+            rentabilidade={"6,28%"}
+            RentabilidadeTipo={6}
             risco={"Conservador"}
             documentosArray={[{ nome: "Regulamento - WISE CASH" }]}
             objetivoDescricao={
@@ -142,7 +144,7 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"0,00%"}
             certificaoAnbima={"Previdência – multimercado livre"}
             resgate={"D+9"}
-            rentabilidadeDeDozeMeses={"Divulgação ainda não permitida"}
+            rentabilidade={"Divulgação ainda não permitida"}
             risco={"Sofisticado"}
             documentosArray={[{ nome: "Regulamento - WISE PREV" }]}
             objetivoDescricao={
@@ -162,10 +164,10 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"Não há"}
             certificaoAnbima={"FIQ FIDC"}
             resgate={"D+91"}
-            rentabilidadeDeDozeMeses={
+            rentabilidade={
               "Sênior: 14,24% - Mezanino: 15,28% - Subordinada: 16,45%"
             }
-            risco={"Sotifiscado"}
+            risco={""}
             documentosArray={[
               { nome: "Lâmina - FIQ FIDC VIA" },
               { nome: "Regulamento - FIQ FIDC VIA" },
@@ -188,8 +190,8 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"20% (Vinte por cento) do exceder 100% do CDI"}
             certificaoAnbima={"Multimercado Livre"}
             resgate={"D+181"}
-            rentabilidadeDeDozeMeses={"9,94%"}
-            risco={"Alto"}
+            rentabilidade={"9,94%"}
+            risco={"Sofisticado"}
             rating={""}
             documentosArray={[
               { nome: "Lâmina - FIC FIM TITAN CAPITAL" },

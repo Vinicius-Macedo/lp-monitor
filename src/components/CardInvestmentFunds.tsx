@@ -16,9 +16,9 @@ type CardInvestmentFundsProps = {
   taxaDePerformance: string;
   certificaoAnbima: string;
   resgate: string;
-  rentabilidadeDeDozeMeses: string;
+  rentabilidade: string;
+  RentabilidadeTipo?: number;
   risco: string;
-
   documentosArray: Documentos[];
   objetivoDescricao: string;
   isTextSmall?: boolean;
@@ -104,7 +104,9 @@ export default function CardInvestmentFunds(props: CardInvestmentFundsProps) {
                 (props.isTextSmall ? " text-[14px]" : "")
               }
             >
-              Rentabilidade 12 meses: {props.rentabilidadeDeDozeMeses}
+              Rentabilidade{" "}
+              {props.RentabilidadeTipo ? props.RentabilidadeTipo : "12"} meses:{" "}
+              {props.rentabilidade}
             </p>
             <p className="text-white font-semibold text-[20px]">
               Risco: {props.risco}
@@ -159,6 +161,7 @@ export default function CardInvestmentFunds(props: CardInvestmentFundsProps) {
                     label={"Classificação ANBIMA"}
                     value={props.certificaoAnbima}
                   />
+
                   <Campo label={"Rating"} value={props.rating} />
                 </div>
               </article>
