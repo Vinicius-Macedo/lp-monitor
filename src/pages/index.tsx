@@ -142,7 +142,7 @@ export default function Home() {
             <CardBlueWithImage
               imgAdress={"home/icone-wealth-management.png"}
               imgAlt={"icone de diamante"}
-              text={"WEALTH MANAGEMENT"}
+              text={"FUNDOS EXCLUSIVOS"}
             />
             <CardBlueWithImage
               imgAdress={"home/icone-fids.png"}

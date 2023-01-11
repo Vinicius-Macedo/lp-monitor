@@ -30,7 +30,7 @@ export default function WealthManagement() {
         </div>
 
         <Image
-          src={"wealth-management/wealth-hero.png"}
+          src={"wealth-management/wealth-hero-2.png"}
           alt={
             "Fundo abstrato com celular gerindo vários aplicativos sobre investimentos"
           }
