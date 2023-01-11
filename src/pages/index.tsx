@@ -168,10 +168,10 @@ export default function Home() {
           </p>
           <div className="lg:hidden">
             <Image
-              src={"home/linha-do-tempo-vertifcal.svg"}
+              src={"home/linha-do-tempo-vertifcal2.svg"}
               alt={"História da Titan Capital"}
-              height={1210}
-              width={333}
+              height={1186}
+              width={220}
               style={{ objectFit: "contain", width: "269px", height: "909px" }}
               unoptimized
               loader={imageLoader}
@@ -179,7 +179,7 @@ export default function Home() {
           </div>
           <div className="hidden lg:block">
             <Image
-              src={"home/linha-do-tempo.svg"}
+              src={"home/linha-do-tempo2.svg"}
               alt={"História da Titan Capital"}
               height={1147}
               width={336}
