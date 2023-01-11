@@ -10,7 +10,7 @@ export default function FundosDeInvestimento() {
     <main className="">
       <HeroSectionGeneric
         title={"FUNDOS"}
-        imgAdress={"fundos/fundos-hero.png"}
+        imgAdress={"fundos/fundos-hero-2.png"}
         imgAlt={"Imagem abstrata de gráficos misturado com moedas físicas"}
       />
       <section className="px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1200px] xl:m-auto flex flex-col gap-32">
@@ -165,7 +165,7 @@ export default function FundosDeInvestimento() {
             rentabilidadeDeDozeMeses={
               "Sênior: 14,24% - Mezanino: 15,28% - Subordinada: 16,45%"
             }
-            risco={""}
+            risco={"Sotifiscado"}
             documentosArray={[
               { nome: "Lâmina - FIQ FIDC VIA" },
               { nome: "Regulamento - FIQ FIDC VIA" },

@@ -5,24 +5,46 @@ import { DefaultMarginSection } from "../components/DefaultMarginSection";
 import { DefaultMarginSectionBg } from "../components/DefaultMarginSectionBg";
 import FaleComAGenteSection from "../components/FaleComAGenteSection";
 import { HeroSectionGeneric } from "../components/HeroSectionGeneric";
+import Image from "next/image";
+import imageLoader from "../loader";
 
 export default function WealthManagement() {
   return (
     <main>
-      <HeroSectionGeneric
-        title={"WEALTH MANAGEMENT"}
-        text={
-          "Construímos planos em sinergia com os mercados globais e objetivos individuais, de forma personalizada, resiliente e completa, com rentabilidade real e consistente."
-        }
-        imgAdress={"wealth-management/wealth-hero.png"}
-        imgAlt={
-          "Fundo abstrato com celular gerindo vários aplicativos sobre investimentos"
-        }
-      />
+      <section className="relative w-full h-[600px] px-8 xl:pt-40 overflow-x-hidden">
+        <div className="w-full h-full max-w-[1110px] m-auto text-white flex flex-col justify-center xl:justify-between py-32 gap-16 ">
+          <div className="flex flex-col xl:gap-16">
+            <h1
+              className={"text-center lg:text-left title-responsive font-light"}
+            >
+              WEALTH MANAGEMENT
+            </h1>
+
+            <p className="text-center lg:text-justify text-responsive max-w-[730px]">
+              Construímos planos em sinergia com os mercados globais e objetivos
+              individuais, de forma personalizada, resiliente e completa, com
+              rentabilidade real e consistente.
+            </p>
+          </div>
+          {/* <SocialMediaIcons className="w-full justify-center lg:justify-start xl:justify-end" /> */}
+        </div>
+
+        <Image
+          src={"wealth-management/wealth-hero.png"}
+          alt={
+            "Fundo abstrato com celular gerindo vários aplicativos sobre investimentos"
+          }
+          loader={imageLoader}
+          style={{ zIndex: -1, objectFit: "cover" }}
+          fill
+          unoptimized
+          priority
+        />
+      </section>
       <DefaultMarginSection className="flex flex-col gap-32">
         <p className="text-center text-[20px] md:text-[32px]">
           <span className="text-blue">Wealth Management</span> ( Gestão
-          Patrimonial) propria para famílias e empresários. Envolvermos
+          Patrimonial) própria para famílias e empresários. Abrangemos
           constantemente com nossa rede global diversificada e inovadora,
           construímos portfólios de investimentos personalizados, resilientes e
           impactantes com retornos reais sustentáveis.
@@ -40,7 +62,7 @@ export default function WealthManagement() {
               {
                 text: "- Benefício do diferimento físcal",
               },
-              { text: "- Ideal para planejamento patrímonial familiar" },
+              { text: "- Ideal para planejamento patrimonial familiar" },
               { text: "- Maiores possibilidades de investimentos" },
             ]}
           />
@@ -49,10 +71,10 @@ export default function WealthManagement() {
             subTopics={[
               { text: "- Gestão profissional dos investimentos pessoais" },
               { text: "- Adequação ao perfil de risco" },
-              { text: "- Remuneração transparente e cas back integral" },
+              { text: "- Remuneração transparente e cashback integral" },
               { text: "- Alinhamento de interesse" },
               {
-                text: "- Acesso à produtos exclusivos das mesas institucionais",
+                text: "- Acesso a produtos exclusivos das mesas institucionais",
               },
             ]}
           />
@@ -102,7 +124,7 @@ export default function WealthManagement() {
           imgAlt={"Icone de documento com checklist"}
         />
       </DefaultMarginSectionBg>
-      <FaleComAGenteSection />
+      {/* <FaleComAGenteSection /> */}
     </main>
   );
 }

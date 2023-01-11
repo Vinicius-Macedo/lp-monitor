@@ -21,7 +21,7 @@ export function CardWithImage(props: CardWithImageProps) {
         unoptimized
         loader={imageLoader}
       />
-      <p className="text-white font-extrabold	text-center text-[24px]">{props.title}</p>
+      <p className="text-white font-extrabold	text-center text-[24px] xl:w-100 xl:h-36">{props.title}</p>
       <p className="text-white font-extrabold	text-center">{props.text}</p>
     </div>
   );

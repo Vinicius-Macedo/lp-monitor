@@ -7,7 +7,7 @@ export default function FidcMiniArticle(props: FidcMiniArticleProps) {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="font-medium">{props.title}</h2>
-      <p>{props.text}</p>
+      <p className="text-justify">{props.text}</p>
     </div>
   );
 }

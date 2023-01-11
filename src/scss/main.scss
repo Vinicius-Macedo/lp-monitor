@@ -326,7 +326,7 @@ html {
 
     .wealth-text {
       grid-area: text;
-      @apply text-center md:text-left;
+      @apply text-center md:text-justify;
     }
   }
 }

@@ -57,20 +57,18 @@ export default function Home() {
             <div className="gradient-bg-blue"></div>
           </div>
           <article className="pt-20 lg:pt-0 flex flex-col gap-8 max-w-[540px] lg:pl-14 lg:border-l-2 lg:border-l-blue lg:border-l-solid">
-            <p className="text-responsive text-center-lg">
+            <p className="text-responsive text-justify">
               A{" "}
               <span className="text-blue text-[36px] font-bold">
                 TITAN CAPITAL
               </span>{" "}
-              uma gestora de recursos especializada na estruturação de fundos de
-              investimentos, com rígido controle de riscos e foco nas melhores
-              oportunidades.
+              é uma gestora de recursos especializada na estruturação de fundos de investimentos, com rígido controle de riscos e foco nas melhores oportunidades.
             </p>
-            <p className="text-responsive text-center-lg">
+            <p className="text-responsive text-justify">
               Combinando experiência e inserção nos mercados local e
               internacional, a Titan Capital atua com uma abordagem customizada
               e de diferenciação para o cliente e procura oferecer uma qualidade
-              superior em seus serviços
+              superior em seus serviços.
             </p>
           </article>
         </DefaultMarginSection>
@@ -85,7 +83,7 @@ export default function Home() {
               imgAlt={"icone de ações"}
               title={"MISSÃO"}
               text={
-                "Combinando experiência e inserção nos mercados local e internacional, a Titan Capital atua com uma abordagem customizada e de diferenciação para o cliente e procura oferecer uma qualidade superior em seus serviços"
+                "Combinando experiência e inserção nos mercados local e internacional, a Titan Capital atua com uma abordagem customizada e de diferenciação para o cliente e procura oferecer uma qualidade superior em seus serviços."
               }
             />
             <CardWithImage
@@ -149,7 +147,7 @@ export default function Home() {
             <CardBlueWithImage
               imgAdress={"home/icone-fids.png"}
               imgAlt={"icone de cartão e dinheiro"}
-              text={"FIDS"}
+              text={"FUNDOS DE INVESTIMENTO"}
             />
           </div>
         </DefaultMarginSection>
@@ -223,7 +221,7 @@ export default function Home() {
             />
           </div>
         </DefaultMarginSectionBg> */}
-        <FaleComAGenteSection />
+        {/* <FaleComAGenteSection /> */}
       </main>
     </>
   );

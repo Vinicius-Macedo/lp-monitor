@@ -38,10 +38,10 @@ export default function Footer() {
                 MINAS GERAIS - Av. Raja Gabáglia, 4000, 4º andar, sala nº 425
                 Cidade Jardim – CEP 30494-310 Tel.: (31) 3656-4979
               </p>
-              <p className="text-[12px]">
+              {/* <p className="text-[12px]">
                 SÃO PAULO - The First Offices - R. Paulo César Fidélis, 39 -
                 Lot. Res. Vila Bella, Campinas - SP, 13087-727
-              </p>
+              </p> */}
             </div>
             <Link href={"/"}>
               <Image
@@ -53,12 +53,16 @@ export default function Footer() {
                 loader={imageLoader}
               />
             </Link>
-            <Link href={"/"}>
+            <Link
+              href={"/"}
+              className={"border-2 border-solid border-[#808080]"}
+            >
               <Image
                 src={"anbima-footer.png"}
                 alt={"Logo da Titan Capital"}
-                width={200}
-                height={111}
+                width={210}
+                height={108}
+                style={{ objectFit: "contain" }}
                 unoptimized
                 loader={imageLoader}
               />

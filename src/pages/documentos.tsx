@@ -19,20 +19,20 @@ export default function Documentos() {
           cardTitle={"POLÍTICAS E MANUAIS"}
           pdfs={[
             { title: "Formulário de Referência CVM - 558" },
-            { title: "PG19.00.04 Política de Gestão de Risco em Liquidez" },
+            { title: "Política de Gestão de Risco em Liquidez" },
             {
               title:
-                "PG19.00.05 Política de Exercício de Direito ao Voto - FII",
+                "Política de Exercício de Direito ao Voto - FII",
             },
             {
               title:
-                "PG19.00.06 Política de Exercício de Direito ao Voto em Assembleia Geral",
+                "Política de Exercício de Direito ao Voto em Assembleia Geral",
             },
-            { title: "PG19.00.08 Política Integrada de Gestão de Riscos" },
-            { title: "PG19.00.09 Política de Rateio e Divisão de Ordens" },
-            { title: "PG19.00.16 - Política de Compliance e Controles" },
-            { title: "PO19.00.00.02 Manual de Compliance" },
-            { title: "PO19.00.00.03 Código de Ética e Conduta" },
+            { title: "Política Integrada de Gestão de Riscos" },
+            { title: "Política de Rateio e Divisão de Ordens" },
+            { title: "Política de Compliance e Controles" },
+            { title: "Manual de Compliance" },
+            { title: "Código de Ética e Conduta" },
             // { title: "Lâmina - DEEP BLUE" },
             // { title: "Lâmina - FIA ADVANCED" },
             // { title: "Lâmina - FIA CHRONOS" },

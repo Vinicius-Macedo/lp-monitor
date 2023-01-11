@@ -3,6 +3,7 @@ import { DefaultMarginSectionBg } from "../components/DefaultMarginSectionBg";
 import { HeroSectionGeneric } from "../components/HeroSectionGeneric";
 import Image from "next/image";
 import imageLoader from "../loader";
+import FaleComAGenteSection from "../components/FaleComAGenteSection";
 
 export default function Contato() {
   return (
@@ -13,6 +14,7 @@ export default function Contato() {
         imgAdress={"trabalhe-conosco/trabalhe-conosco.webp"}
         imgAlt={"Imagem abstrata de tecnologia sobre trabalho em quipe"}
       />
+      <FaleComAGenteSection />
       <DefaultMarginSectionBg
         className="flex justify-center items-center xl:gap-16"
         backgroundClass="bg-darkblue"
@@ -49,13 +51,11 @@ export default function Contato() {
             <button className="bg-[#4F9DE1] hover:bg-[#2178c4] active:bg-[#4F9DE1] text-center text-white font-bold py-8">
               ENVIAR
             </button>
-            <p className="text-center text-white font-bold text-[12px]">
+            <p className="text-justify text-white font-bold text-[12px]">
               A Wise Investimentos é uma empresa de agentes autônomos de
               investimentos contratada pelo BTG Pactual, na forma de legislação
               da CVM. Prezando por uma relação de transparência com seus
-              clientes, ao informar seus dados nesta página você será
-              redirecionado ao site de nosso parceiro BTG PACTUAL para dar
-              continuidade na abertura de conta.
+              clientes, ao informar seus dados nesta página esses dados serão entregues para o responsável por contratações.
             </p>
           </form>
         </div>

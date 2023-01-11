@@ -17,7 +17,7 @@ export default function FundosExclusivos() {
       <HeroSectionGeneric
         title={"FUNDOS EXCLUSIVOS"}
         text={
-          "ANTECIPAÇÃO DE RECEBÍVEIS, FEITA SOB MEDIDA, ATRAVÉS DA ESTRUTURAÇÃO DA FIDC's."
+          "ANTECIPAÇÃO DE RECEBÍVEIS, FEITA SOB MEDIDA, ATRAVÉS DA ESTRUTURAÇÃO DE FIDC's."
         }
         imgAdress={"fidc/fidc-hero.png"}
         imgAlt={"Imagem abstrata de gráficos misturado com moedas físicas"}
@@ -150,7 +150,7 @@ export default function FundosExclusivos() {
           customClass={marginLeft}
         />
       </DefaultMarginSection>
-      <FaleComAGenteSection />
+      {/* <FaleComAGenteSection /> */}
     </main>
   );
 }
