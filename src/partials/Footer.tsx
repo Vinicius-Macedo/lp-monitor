@@ -35,8 +35,8 @@ export default function Footer() {
             <div className="w-full lg:max-w-[445px] flex flex-col gap-8">
               <p className="font-bold text-[14px]">ENDEREÇOS</p>
               <p className="text-[12px]">
-                MINAS GERAIS - Av. Raja Gabáglia, 4000, 4º andar, sala nº 425
-                Cidade Jardim – CEP 30494-310 Tel.: (31) 3656-4979
+                Av. Dr. Jesuíno Marcondes Machado, 2382 - Chácara da Barra,
+                Campinas - CEP 13090723 - SP Tel.: (31) 3656-4979
               </p>
               {/* <p className="text-[12px]">
                 SÃO PAULO - The First Offices - R. Paulo César Fidélis, 39 -
