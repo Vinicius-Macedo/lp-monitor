@@ -36,12 +36,9 @@ export default function FaleComAGenteSection() {
             ENVIAR
           </button>
           <p className="text-center text-white font-bold text-[12px]">
-            A Titan é uma empresa de agentes autônomos de
-            investimentos contratada pelo BTG Pactual, na forma de legislação da
-            CVM. Prezando por uma relação de transparência com seus clientes, ao
-            informar seus dados nesta página você será redirecionado ao site de
-            nosso parceiro BTG PACTUAL para dar continuidade na abertura de
-            conta.
+            A Titan preza por uma relação de transparência. Enviando seu
+            contato, está ciente de que seus dados poder ser utilizados para
+            fins comerciais, da Titan e demais empresas do grupo.
           </p>
         </form>
       </div>

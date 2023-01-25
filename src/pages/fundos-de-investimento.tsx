@@ -30,7 +30,7 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"0,00%"}
             certificaoAnbima={"Multimercado livre"}
             resgate={"D+6"}
-            rentabilidade={"5,56%"}
+            rentabilidade={"10,50%"}
             risco={"Sofisticado"}
             documentosArray={[
               { nome: "Lâmina - Wise Selection" },
@@ -165,7 +165,7 @@ export default function FundosDeInvestimento() {
             certificaoAnbima={"FIQ FIDC"}
             resgate={"D+91"}
             rentabilidade={
-              "Sênior: 14,24% - Mezanino: 15,28% - Subordinada: 16,45%"
+              "10,50%"
             }
             risco={"Sofisticado"}
             documentosArray={[
@@ -190,7 +190,7 @@ export default function FundosDeInvestimento() {
             taxaDePerformance={"20% (Vinte por cento) do exceder 100% do CDI"}
             certificaoAnbima={"Multimercado Livre"}
             resgate={"D+181"}
-            rentabilidade={"9,94%"}
+            rentabilidade={"10,50%"}
             risco={"Sofisticado"}
             rating={""}
             documentosArray={[

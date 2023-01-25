@@ -52,10 +52,9 @@ export default function Contato() {
               ENVIAR
             </button>
             <p className="text-justify text-white font-bold text-[12px]">
-              A Titan Investimentos é uma empresa de agentes autônomos de
-              investimentos contratada pelo BTG Pactual, na forma de legislação
-              da CVM. Prezando por uma relação de transparência com seus
-              clientes, ao informar seus dados nesta página esses dados serão entregues para o responsável por contratações.
+              A Titan preza por uma relação de transparência. Enviando seu
+              contato, está ciente de que seus dados poder ser utilizados para
+              fins comerciais, da Titan e demais empresas do grupo.
             </p>
           </form>
         </div>
