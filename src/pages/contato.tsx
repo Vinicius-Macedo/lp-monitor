@@ -10,7 +10,7 @@ export default function Contato() {
     <main>
       <HeroSectionGeneric
         title={"FALE CONOSCO"}
-        text={"Construa sua carreira na Titan"}
+        text={""}
         imgAdress={"trabalhe-conosco/trabalhe-conosco.webp"}
         imgAlt={"Imagem abstrata de tecnologia sobre trabalho em quipe"}
       />
@@ -52,7 +52,7 @@ export default function Contato() {
               ENVIAR
             </button>
             <p className="text-justify text-white font-bold text-[12px]">
-              A Wise Investimentos é uma empresa de agentes autônomos de
+              A Titan Investimentos é uma empresa de agentes autônomos de
               investimentos contratada pelo BTG Pactual, na forma de legislação
               da CVM. Prezando por uma relação de transparência com seus
               clientes, ao informar seus dados nesta página esses dados serão entregues para o responsável por contratações.

@@ -36,7 +36,7 @@ export default function FaleComAGenteSection() {
             ENVIAR
           </button>
           <p className="text-center text-white font-bold text-[12px]">
-            A Wise Investimentos é uma empresa de agentes autônomos de
+            A Titan é uma empresa de agentes autônomos de
             investimentos contratada pelo BTG Pactual, na forma de legislação da
             CVM. Prezando por uma relação de transparência com seus clientes, ao
             informar seus dados nesta página você será redirecionado ao site de

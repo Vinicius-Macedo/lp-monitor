@@ -43,30 +43,31 @@ export default function Footer() {
                 Lot. Res. Vila Bella, Campinas - SP, 13087-727
               </p> */}
             </div>
-            <Link href={"/"}>
-              <Image
-                src={"titan-logo-footer.png"}
-                alt={"Logo da Titan Capital"}
-                width={201}
-                height={139}
-                unoptimized
-                loader={imageLoader}
-              />
-            </Link>
-            <Link
-              href={"/"}
-              className={"border-2 border-solid border-[#808080]"}
-            >
-              <Image
-                src={"anbima-footer.png"}
-                alt={"Logo da Titan Capital"}
-                width={210}
-                height={108}
-                style={{ objectFit: "contain" }}
-                unoptimized
-                loader={imageLoader}
-              />
-            </Link>
+            <div className="flex items-center gap-32">
+              <Link href={"/"}>
+                <Image
+                  src={"titan-logo-footer.png"}
+                  alt={"Logo da Titan Capital"}
+                  width={150}
+                  height={104}
+                  style={{ objectFit: "contain" }}
+                  unoptimized
+                  loader={imageLoader}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src={"anbima-footer.png"}
+                  alt={"Logo da Titan Capital"}
+                  className={"border-2 border-solid border-[#808080]"}
+                  width={150}
+                  height={77}
+                  style={{ objectFit: "contain" }}
+                  unoptimized
+                  loader={imageLoader}
+                />
+              </Link>
+            </div>
           </div>
           <SocialMediaIcons className="w-full justify-center lg:justify-end" />
         </div>

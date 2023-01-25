@@ -33,8 +33,8 @@ export default function FundosDeInvestimento() {
             rentabilidade={"5,56%"}
             risco={"Sofisticado"}
             documentosArray={[
-              { nome: "Lâmina - FIC FIM TITAN CAPITAL" },
-              { nome: "Regulamento - FIC FIM TITAN CAPITAL" },
+              { nome: "Lâmina - Wise Selection" },
+              { nome: "Regulamento - Wise Selection" },
             ]}
             objetivoDescricao={
               "O Wise Selection tem como objetivo obter ganhos de capital mediante investimento em cotas de fundos de investimento que realizam operações nos mercados de juros, câmbio, ações, commodities e dívida, utilizando-se de instrumentos disponíveis tanto nos mercados à vista quanto nos mercados de derivativos."
@@ -135,7 +135,7 @@ export default function FundosDeInvestimento() {
           <CardInvestmentFunds
             title={"FIM WISE PREV"}
             objetivo={"Superar o CDI"}
-            prazoDeAplicao={"D+0"}
+            prazoDeAplicao={"D+1"}
             prazoDeResgate={"D+9"}
             aplicaoInicial={"R$ 500,00"}
             movimentacaoMinima={"R$ 500,00"}
@@ -167,7 +167,7 @@ export default function FundosDeInvestimento() {
             rentabilidade={
               "Sênior: 14,24% - Mezanino: 15,28% - Subordinada: 16,45%"
             }
-            risco={""}
+            risco={"Sofisticado"}
             documentosArray={[
               { nome: "Lâmina - FIQ FIDC VIA" },
               { nome: "Regulamento - FIQ FIDC VIA" },

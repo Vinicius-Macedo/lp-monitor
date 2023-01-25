@@ -137,17 +137,17 @@ export default function Home() {
             <CardBlueWithImage
               imgAdress={"home/icone-dinheiro.png"}
               imgAlt={"icone de dinheiro"}
-              text={"FUNDOS DE INVESTIMENTOS"}
+              text={"FUNDOS DE INVESTIMENTO"}
             />
             <CardBlueWithImage
               imgAdress={"home/icone-wealth-management.png"}
               imgAlt={"icone de diamante"}
-              text={"FUNDOS EXCLUSIVOS"}
+              text={"FUNDOS EXLCUSIVOS"}
             />
             <CardBlueWithImage
               imgAdress={"home/icone-fids.png"}
               imgAlt={"icone de cartão e dinheiro"}
-              text={"FUNDOS DE INVESTIMENTO"}
+              text={"WEALTH MANAGEMENT"}
             />
           </div>
         </DefaultMarginSection>

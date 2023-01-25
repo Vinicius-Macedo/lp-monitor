@@ -160,7 +160,7 @@ export default function OrganizacaoFinanceira() {
             unoptimized
           />
           <article className="texto-container">
-            <p className="texto-responsivo-big text-center">
+            <p className="texto-responsivo-big text-justify">
               Hoje,{" "}
               <span className="text-blue font-bold">
                 aproximadamente 1% dos aposentados
@@ -168,7 +168,7 @@ export default function OrganizacaoFinanceira() {
               conseguem manter o padrão de vida que tinham antes de se
               aposentar!
             </p>
-            <p className="texto-responsivo-big text-center">
+            <p className="texto-responsivo-big text-justify">
               Além disso, o planejamento financeiro e de investimentos, traz muitos benefícios, como:
 
             </p>
