@@ -37,8 +37,8 @@ export default function FaleComAGenteSection() {
           </button>
           <p className="text-center text-white font-bold text-[12px]">
             A Titan preza por uma relação de transparência. Enviando seu
-            contato, está ciente de que seus dados poder ser utilizados para
-            fins comerciais, da Titan e demais empresas do grupo.
+            contato, está ciente de que seus dados podem ser utilizados para
+            fins comerciais da Titan e demais empresas do grupo.
           </p>
         </form>
       </div>
