@@ -22,7 +22,7 @@ export default function Contato() {
       >
         <div className="w-full max-w-[540px] bg-darkblue">
           <h2 className="title-responsive text-blue font-bold text-center">
-            TRABALHE COM A GENTE
+            CONTATO
           </h2>
           <p className="text-center text-white my-8">
             Nossos valores: Combinamos diferentes expertises pautadas em
@@ -53,8 +53,8 @@ export default function Contato() {
             </button>
             <p className="text-justify text-white font-bold text-[12px]">
               A Titan preza por uma relação de transparência. Enviando seu
-              contato, está ciente de que seus dados poder ser utilizados para
-              fins comerciais, da Titan e demais empresas do grupo.
+              contato, está ciente de que seus dados podem ser utilizados para
+              fins comerciais da Titan e demais empresas do grupo.
             </p>
           </form>
         </div>

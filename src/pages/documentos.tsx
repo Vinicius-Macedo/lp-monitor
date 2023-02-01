@@ -21,8 +21,7 @@ export default function Documentos() {
             { title: "Formulário de Referência CVM - 558" },
             { title: "Política de Gestão de Risco em Liquidez" },
             {
-              title:
-                "Política de Exercício de Direito ao Voto - FII",
+              title: "Política de Exercício de Direito ao Voto - FII",
             },
             {
               title:
@@ -33,103 +32,29 @@ export default function Documentos() {
             { title: "Política de Compliance e Controles" },
             { title: "Manual de Compliance" },
             { title: "Código de Ética e Conduta" },
-            // { title: "Lâmina - DEEP BLUE" },
-            // { title: "Lâmina - FIA ADVANCED" },
-            // { title: "Lâmina - FIA CHRONOS" },
-            // { title: "Lâmina - FIC FIM TITAN CAPITAL" },
+            // { title: "Formulário de Referência – Anexo 15-II ICVM 558 2021" },
+            // { title: "Manual de Compliance 2021" },
+            // { title: "Padrões de Conduta – O Código de Ética e Conduta 2019" },
+            // { title: "Políticas e Normas para Controles Internos 2019" },
             // {
-            //   title: "Lâmina - FIQ FIDC VIA",
+            // title:
+            // "Política para Investimentos Pessoais e Insider Trading 2020",
             // },
             // {
-            //   title: "Lâmina - WISE SELECTION",
+            // title:
+            // "Política de Rateio e Divisão de Ordens entre Carteiras de Valores Mobiliários 2019",
             // },
-            // { title: "Regulamento - DEEP BLUE" },
-            // { title: "Regulamento - FIA ADVANCED" },
+            // { title: "Manual Interno de Gestão de Riscos 2019" },
+            // { title: "Política de Gestão de Risco de Liquidez 2019" },
             // {
-            //   title: "Regulamento - FIA CHRONOS",
+            // title: "Política de Gestão e Avaliação de Risco de Crédito 2021",
             // },
             // {
-            //   title: "Regulamento - FIC FIM TITAN CAPITAL",
+            // title:
+            // "Política de Gestão e Avaliação de Risco de Mercado e Taxa de Juros 2019",
             // },
-            // { title: "Regulamento - FIQ FIDC VIA" },
-            // { title: "Regulamento - WISE CASH" },
-            // { title: "Regulamento - WISE PREV" },
-            // { title: "Regulamento - WISE SELECTION" },
-            { title: "Formulário de Referência – Anexo 15-II ICVM 558 2021" },
-            { title: "Manual de Compliance 2021" },
-            { title: "Padrões de Conduta – O Código de Ética e Conduta 2019" },
-            { title: "Políticas e Normas para Controles Internos 2019" },
-            {
-              title:
-                "Política para Investimentos Pessoais e Insider Trading 2020",
-            },
-            {
-              title:
-                "Política de Rateio e Divisão de Ordens entre Carteiras de Valores Mobiliários 2019",
-            },
-            { title: "Manual Interno de Gestão de Riscos 2019" },
-            { title: "Política de Gestão de Risco de Liquidez 2019" },
-            {
-              title: "Política de Gestão e Avaliação de Risco de Crédito 2021",
-            },
-            {
-              title:
-                "Política de Gestão e Avaliação de Risco de Mercado e Taxa de Juros 2019",
-            },
           ]}
         />
-        {/* <CardDePdfs
-          cardTitle={"POLÍTICAS E MANUAIS"}
-          pdfs={[
-            { title: "Formulário de Referência – Anexo 15-II ICVM 558 2021" },
-            { title: "Manual de Compliance 2021" },
-            { title: "Padrões de Conduta – O Código de Ética e Conduta 2019" },
-            { title: "Políticas e Normas para Controles Internos 2019" },
-            {
-              title:
-                "Política para Investimentos Pessoais e Insider Trading 2020",
-            },
-            {
-              title:
-                "Política de Rateio e Divisão de Ordens entre Carteiras de Valores Mobiliários 2019",
-            },
-            { title: "Manual Interno de Gestão de Riscos 2019" },
-            { title: "Política de Gestão de Risco de Liquidez 2019" },
-            {
-              title: "Política de Gestão e Avaliação de Risco de Crédito 2021",
-            },
-            {
-              title:
-                "Política de Gestão e Avaliação de Risco de Mercado e Taxa de Juros 2019",
-            },
-          ]}
-        />
-        <CardDePdfs
-          cardTitle={"POLÍTICA DE VOTO"}
-          hasGrayBackground={true}
-          pdfs={[
-            {
-              title:
-                "Política do Exercício de Direito de Voto em Assembléias Gerais",
-            },
-            {
-              title:
-                "Política do Exercício de Direito de Voto para Fundos FIIs",
-            },
-          ]}
-        />
-        <CardDePdfs
-          cardTitle={"PARTICIPAÇÕES EM ASSEMBLÉIAS"}
-          hasDescriptionInTheEnd={true}
-          DescriptionText={
-            "A partir de 2016 não houve mais Participação em Assembléia, somente para os Fundos Exclusivos."
-          }
-          pdfs={[
-            { title: "2013 – Quadro Resumo das Participações em Assembléias" },
-            { title: "2014 – Quadro Resumo das Participações em Assembléias" },
-            { title: "2015 – Quadro Resumo das Participações em Assembléias" },
-          ]}
-        /> */}
       </DefaultMarginSection>
     </main>
   );

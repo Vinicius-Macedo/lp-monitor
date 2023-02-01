@@ -62,13 +62,16 @@ export default function Home() {
               <span className="text-blue text-[36px] font-bold">
                 TITAN CAPITAL
               </span>{" "}
-              é uma gestora de recursos especializada na estruturação de fundos de investimentos, com rígido controle de riscos e foco nas melhores oportunidades.
+              é uma gestora de recursos especializada na estruturação de fundos
+              de investimentos, com rígido controle de riscos e foco nas
+              melhores oportunidades.
             </p>
             <p className="text-responsive text-justify">
-              Combinando experiência e inserção nos mercados local e
-              internacional, a Titan Capital atua com uma abordagem customizada
-              e de diferenciação para o cliente e procura oferecer uma qualidade
-              superior em seus serviços.
+              Além disso, a Titan Capital possui uma equipe altamente capacitada
+              de profissionais com ampla experiência em investimentos
+              financeiros, que trabalham de forma colaborativa para garantir a
+              excelência na prestação de serviços aos seus clientes. Com uma
+              ampla gama de opções de investimento e estratégias personalizadas.
             </p>
           </article>
         </DefaultMarginSection>
@@ -142,7 +145,7 @@ export default function Home() {
             <CardBlueWithImage
               imgAdress={"home/icone-wealth-management.png"}
               imgAlt={"icone de diamante"}
-              text={"FUNDOS EXLCUSIVOS"}
+              text={"FUNDOS EXCLUSIVOS"}
             />
             <CardBlueWithImage
               imgAdress={"home/icone-fids.png"}

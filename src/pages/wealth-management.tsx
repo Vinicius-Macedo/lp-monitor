@@ -43,7 +43,7 @@ export default function WealthManagement() {
       </section>
       <DefaultMarginSection className="flex flex-col gap-32">
         <p className="text-center text-[20px] md:text-[32px]">
-          <span className="text-blue">Wealth Management</span> ( Gestão
+          <span className="text-blue">Wealth Management</span> (Gestão
           Patrimonial) própria para famílias e empresários. Abrangemos
           constantemente com nossa rede global diversificada e inovadora,
           construímos portfólios de investimentos personalizados, resilientes e
