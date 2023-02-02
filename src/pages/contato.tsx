@@ -9,7 +9,7 @@ export default function Contato() {
   return (
     <main>
       <HeroSectionGeneric
-        title={"FALE CONOSCO"}
+        title={"CONTATO"}
         text={""}
         imgAdress={"trabalhe-conosco/trabalhe-conosco.webp"}
         imgAlt={"Imagem abstrata de tecnologia sobre trabalho em quipe"}
