@@ -1,86 +1,36 @@
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import React, { useState } from "react";
-import Link from "next/link";
 
 const imageLoader = require("./../loader.js");
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].classList.add("bg-black");
+    document.getElementsByTagName("body")[0].classList.add("text-white");
+  }, []);
 
   return (
-    <header className="header">
-      <nav className={"menu" + (isMenuOpen ? " open" : "")}>
-        <Link href="/" className="xl:hidden" as="image">
-          <figure className="relative w-[80px] h-[40px]">
-            <Image
-              src="logo-titan.png"
-              alt="Logo da Wise"
-              fill
-              style={{ objectFit: "contain" }}
-              loader={imageLoader}
-              unoptimized={true}
-              priority
-            />
-          </figure>
-        </Link>
-        <ul className="lista">
-          <li className="item">
-            <Link href="/" className="link">
-              A TITAN
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/fundos-de-investimento" className="link">
-              FUNDOS
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/fundos-exclusivos" className="link">
-              FUNDOS EXCLUSIVOS
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/wealth-management" className="link">
-              WEALTH MANAGEMENT
-            </Link>
-          </li>
-          <Link href="/" className="hidden xl:block">
-            <figure className="relative w-[80px] h-[40px]">
-              <Image
-                src="logo-titan.png"
-                alt="Logo da Wise"
-                fill
-                style={{ objectFit: "contain" }}
-                loader={imageLoader}
-                priority
-                unoptimized={true}
-              />
-            </figure>
-          </Link>
-          <li className="item">
-            <Link href="/organizacao-financeira" className="link">
-              ORGANIZAÇÃO FINANCEIRA
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/documentos" className="link">
-              DOCUMENTOS
-            </Link>
-          </li>
-          <li className="item">
-            <Link href="/contato" className="link">
-              CONTATO
-            </Link>
-          </li>
-        </ul>
-        <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="toggle-btn">
-          <div className="bars"></div>
-        </div>
-      </nav>
-      <div
-        onClick={() => setIsMenuOpen(false)}
-        className={"overflow" + (isMenuOpen ? " active" : "")}
-      ></div>
+    <header className="flex justify-between w-full max-w-[1110px] px-16 xl:px-0 pt-16 m-auto">
+      <div>
+        <p className="font-montserrat text-[18px] font-semibold leading-[20px]">
+          Formação de
+          <br />
+          investidores
+        </p>
+        <p className="text-gray text-[12px]">SEJA UM MULTI-INVESTIDOR</p>
+      </div>
+      <div>
+        <figure className="relative w-70 h-30">
+          <Image
+            src={"/img/monitor-do-mercado.webp"}
+            alt={"Logo do monitor do mercado"}
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            fill
+            loader={imageLoader}
+            unoptimized
+          />
+        </figure>
+      </div>
     </header>
   );
 }

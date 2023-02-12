@@ -1,28 +1,25 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import imageLoader from "../loader";
 
 type CardWithImageProps = {
-  imgAdress: any;
+  imgAdress: string;
   imgAlt: string;
   title: string;
-  text: string;
 };
 
-export function CardWithImage(props: CardWithImageProps) {
+export default function CardWithImage(props: CardWithImageProps) {
   return (
-    <div className="flex flex-col items-center w-full max-w-[350px] gap-4">
+    <div>
       <Image
         src={props.imgAdress}
         alt={props.imgAlt}
-        height={144}
-        width={157}
-        style={{ objectFit: "contain", width: "157px", height: "144px" }}
-        unoptimized
+        width={345}
+        height={228}
         loader={imageLoader}
+        unoptimized
       />
-      <p className="text-white font-extrabold	text-center text-[24px] xl:w-100 xl:h-36">{props.title}</p>
-      <p className="text-white font-extrabold	text-center">{props.text}</p>
+      <h3 className="bg-yellow text-black text-center py-5 font-extrabold">{props.title}</h3>
     </div>
   );
 }

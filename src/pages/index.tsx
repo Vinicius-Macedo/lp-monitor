@@ -1,230 +1,317 @@
 const imageLoader = require("./../loader.js");
-import Image from "next/image";
+import Image, { ImageLoaderProps } from "next/image";
+import CardNumber from "../components/CardNumber";
+import CardWithImage from "../components/CardWithImage";
 
-import SocialMediaIcons from "../components/SocialMediaIcons";
 import { DefaultMarginSection } from "../components/DefaultMarginSection";
-import { DefaultMarginSectionBg } from "../components/DefaultMarginSectionBg";
-import { CardWithImage } from "../components/CardWithImage";
-import GrowingNumberCard from "../components/GrowingNumberCard";
-import { CardBlueWithImage } from "../components/CardBlueWithImage";
-import CardAuthorWithHoverEffect from "../components/CardAuthorWithHoverEffect";
-import FaleComAGenteSection from "../components/FaleComAGenteSection";
+import IconWithText from "../components/IconWithText";
+import ModuleTopic from "../components/ModuleTopic";
+import Topics from "../components/Topics";
 
 export default function Home() {
   return (
     <>
-      <main className="overflow-x-hidden">
-        <section className="relative w-full h-[600px] px-8 xl:pt-40 overflow-x-hidden">
-          <div className="flex flex-col items-center justify-center gap-16 h-full w-full max-w-[1110px] m-auto">
-            <Image
-              src={"home/titan-with-description.png"}
-              alt={"Logo do Titan com descrição da imagem"}
-              loader={imageLoader}
-              width={532}
-              height={371}
-              style={{
-                objectFit: "contain",
-              }}
-              unoptimized
-              priority
-            />
-            {/* <SocialMediaIcons className="w-full justify-center xl:justify-end" /> */}
-          </div>
-
-          <Image
-            src={"home/hero-section.png"}
-            alt={"Imagem abstrata de fundo"}
-            loader={imageLoader}
-            style={{ zIndex: -1, objectFit: "cover" }}
-            fill
-            unoptimized
-            priority
-          />
-        </section>
-        <DefaultMarginSection className="flex flex-col items-center gap-16 lg:flex-row-reverse lg:justify-between">
-          <div className="relative">
-            <figure className="lg:w-[496px] xl:w-[530px] xl:-mr-30 3xl:w-[644px] 3xl:-mr-50">
-              <Image
-                src={"home/mulher-e-homem-olhando-celular.png"}
-                alt={"Aula presencial sobre investimentos"}
-                loader={imageLoader}
-                width={730}
-                height={494}
-                style={{ width: "100%", height: "100%", objectFit: "contain" }}
-                unoptimized
-              />
-            </figure>
-            <div className="gradient-bg-blue"></div>
-          </div>
-          <article className="pt-20 lg:pt-0 flex flex-col gap-8 max-w-[540px] lg:pl-14 lg:border-l-2 lg:border-l-blue lg:border-l-solid">
-            <p className="text-responsive text-justify">
-              A{" "}
-              <span className="text-blue text-[36px] font-bold">
-                TITAN CAPITAL
+      <main className="bg-black overflow-hidden">
+        <DefaultMarginSection className="flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32">
+          <div className="max-w-[665px] flex flex-col gap-12 items-center lg:items-start">
+            <h1 className="text-center text-[22.5px] xl:text-[36px] font-extrabold md:text-left lg:text-justify">
+              Aprenda escolher os{" "}
+              <span className="text-yellow">
+                melhores investimentos e acelerar seus resultados.
               </span>{" "}
-              é uma gestora de recursos especializada na estruturação de fundos
-              de investimentos, com rígido controle de riscos e foco nas
-              melhores oportunidades.
-            </p>
-            <p className="text-responsive text-justify">
-              Além disso, a Titan Capital possui uma equipe altamente capacitada
-              de profissionais com ampla experiência em investimentos
-              financeiros, que trabalham de forma colaborativa para garantir a
-              excelência na prestação de serviços aos seus clientes. Com uma
-              ampla gama de opções de investimento e estratégias personalizadas.
-            </p>
-          </article>
+              Conheça os conceitos e práticas de investimentos para tomar as
+              melhores decisões e montar{" "}
+              <span className="text-yellow">
+                uma carteira de investimentos lucrativa.
+              </span>
+            </h1>
+            <div className="flex flex-col items-center gap-2 w-full lg:items-start">
+              <p className="semititle text-center md:text-left">
+                Faça agora sua matrícula
+              </p>
+              <a
+                href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+                target={"_blank"}
+                className="bg-yellow text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
+              >
+                QUERO GARANTIR MINHA VAGA
+              </a>
+            </div>
+          </div>
+          <figure className="relative flex justify-center xl:-mr-30">
+            <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
+            <Image
+              src={"/img/hero-photo.webp"}
+              alt={"Douglas Soave"}
+              className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
+              loader={imageLoader}
+              width={540}
+              height={729}
+              unoptimized
+            />
+          </figure>
         </DefaultMarginSection>
-        <DefaultMarginSectionBg
-          backgroundClass="bg-dark"
-          className="flex flex-col gap-32 lg:gap-64"
-          isBackgroundImage={false}
-        >
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-15">
-            <CardWithImage
-              imgAdress={"home/icone-segurando-acoes.png"}
-              imgAlt={"icone de ações"}
-              title={"MISSÃO"}
+        <DefaultMarginSection className="flex flex-col gap-32 relative">
+          <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -left-[200px] md:-left-[150px] lg:-left-[300px] 3xl:-left-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
+          <h2 className="title font-extrabold text-center">
+            O QUE O{" "}
+            <span className="text-yellow">FORMAÇÃO DE INVESTIDORES</span>
+            <br /> IRÁ ENTREGAR:
+          </h2>
+          <div className="flex flex-wrap justify-center xl:justify-between gap-16 relative">
+            <IconWithText
+              imgAdress={"/img/icon-book.webp"}
+              imgAlt={"icone de livro"}
+              title={"Conteúdo"}
+              text={"5 Módulos de conteúdo exclusivo"}
+            />
+            <IconWithText
+              imgAdress={"/img/icon-clock.webp"}
+              imgAlt={"icone de relógio"}
+              title={"Inicio das aulas"}
               text={
-                "Combinando experiência e inserção nos mercados local e internacional, a Titan Capital atua com uma abordagem customizada e de diferenciação para o cliente e procura oferecer uma qualidade superior em seus serviços."
+                "Modelo flexível para adaptar a sua rotina com aulas gravadas."
               }
             />
-            <CardWithImage
-              imgAdress={"home/icone-apresentacao.png"}
-              imgAlt={"icone de apresentação"}
-              title={"ESTRATÉGIA DE GESTÃO"}
+            <IconWithText
+              imgAdress={"/img/icon-screen.webp"}
+              imgAlt={"icone de tela"}
+              title={"Duração"}
               text={
-                "Com a indústria tradicional de fundos, focando em segmentos que trazem diversificação para nossos investidores, em um processo de investimento inovador."
-              }
-            />
-            <CardWithImage
-              imgAdress={"home/icone-aperto-de-mao.png"}
-              imgAlt={"icone de aperto de mãos"}
-              title={"RELAÇÕES COM O INVESTIDOR"}
-              text={
-                "Acreditamos que uma relação próxima e transparente com os investidores e parceiros é a melhor forma de alinharmos os interesses e criarmos uma relação mútua de confiança com geração de valor."
+                "Com método estruturado e pragmático, o curso conta com 5 horas de duração"
               }
             />
           </div>
-          <div className="flex flex-col gap-16 lg:gap-32">
-            <h2 className="title-responsive text-blue font-bold text-center">
-              NOSSOS NUMEROS CRESCEM TODOS OS DIAS
+        </DefaultMarginSection>
+        <DefaultMarginSection className="flex flex-col items-center m-auto gap-32">
+          <div className="max-w-[652px]">
+            <p className="text text-gray font-normal text-center leading-8	">
+              Com linguagem simples e objetiva, conheça os tipos de
+              investimentos e faça o seu dinheiro render de verdade!
+            </p>
+            <h2 className="text-center text-yellow font-extrabold title max-w-[652px]">
+              OS SEGREDOS REVELEADOS SOBRE
             </h2>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-15">
-              <GrowingNumberCard
-                number={14}
-                description={"ANOS DE EXPERIÊNCIA"}
-                hasPlusIcon={false}
-                hasMi={false}
+          </div>
+          <div className="flex flex-wrap gap-15 justify-center items-center w-full m-auto">
+            <CardWithImage
+              imgAdress={"/img/card-image-3.webp"}
+              imgAlt={"Segurando globo com olograma terrestre"}
+              title={"PRINCÍPIOS FUNDAMENTAIS"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-2.webp"}
+              imgAlt={"Olograma de gráficos subindo"}
+              title={"MONTAGEM DE CARTEIRA"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-4.webp"}
+              imgAlt={"Dólars com calculadora e gráficos"}
+              title={"COMO INVESTIR"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-5.webp"}
+              imgAlt={"Copo com uma planta e moedas no lugar da terra"}
+              title={"FUNDOS DE INVESTIMENTOS"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-1.webp"}
+              imgAlt={"Olograma de gráficos subindo"}
+              title={"RENDA FIXA"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-6.webp"}
+              imgAlt={"Gráficos subindo"}
+              title={"AÇÕES"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-7.webp"}
+              imgAlt={
+                "Olagrama com opções e uma pessoa apertando o botão investment"
+              }
+              title={"OPÇÕES"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-8.webp"}
+              imgAlt={"Globo terrestre olográfico com conexões"}
+              title={"BDR'S"}
+            />
+            <CardWithImage
+              imgAdress={"/img/card-image-9.webp"}
+              imgAlt={"celular com ilustração de casa em cima"}
+              title={"FUNDOS IMOBILIÁRIOS"}
+            />
+          </div>
+        </DefaultMarginSection>
+        <DefaultMarginSection className="relative flex justify-center flex-wrap gap-32 lg:gap-0 lg:justify-between">
+          <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -right-[200px] md:-right-[150px] lg:-right-[300px] 3xl:-right-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
+          <div>
+            <h2 className="font-bold title leading-10 text-center lg:text-left lg:w-[268px]">
+              Invista no seu conhecimento!
+            </h2>
+            <div>
+              <Topics
+                number={"01"}
+                topic={"LIBERDADE"}
+                text={"Aprenda de onde você estiver."}
               />
-              <GrowingNumberCard
-                number={10}
-                description={"PROFISSIONAIS"}
-                hasPlusIcon={true}
-                hasMi={false}
+              <Topics
+                number={"02"}
+                topic={"AUTONOMIA"}
+                text={
+                  "Organize seus estudos de acordo com à sua disponibilidade"
+                }
               />
-              <GrowingNumberCard
-                number={400}
-                description={"ATIVOS SOB GESTÃO"}
-                hasPlusIcon={false}
-                hasMi={true}
+              <Topics
+                number={"03"}
+                topic={"SUPER BONÛS"}
+                text={
+                  "Duas aulas AO VIVO com contéudos exclusivos + tira dúvidas"
+                }
               />
             </div>
           </div>
-        </DefaultMarginSectionBg>
-        <DefaultMarginSection className="flex flex-col ga-16 lg:gap-32">
-          <h2 className="title-responsive text-blue font-bold text-center">
-            PRODUTOS
+          <div className="flex flex-col items-start gap-6">
+            <div>
+              <p className="font-bold title">Faça sua inscrição AGORA!</p>
+              <p className="text-yellow text-[24px]">
+                CONDIÇÃO EXCLUSIVA PRÉ-INSCRIÇÃO
+                <br />
+                <span className="text-white">
+                  DE R$ <span className="line-through">997,00</span>
+                </span>
+              </p>
+              <div className="flex items-center gap-8">
+                <div className="text-yellow flex flex-col items-center">
+                  <p className="text">POR</p>
+                  <p className="text-[36px] font-bold leading-6">R$</p>
+                </div>
+                <p className="text-yellow text-[80px] sm:text-[120px] font-extrabold gap-4 leading-[1]">
+                  397,00
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+              target={"_blank"}
+              className="bg-yellow text-black font-extrabold py-12 w-full max-w-[449px] text-[22px] sm:text-[32px] text-center rounded"
+            >
+              FAZER MINHA INSCRIÇÃO
+            </a>
+          </div>
+        </DefaultMarginSection>
+        <DefaultMarginSection
+          containerClassName="background-image-default z-[3] relative"
+          className={"flex flex-col gap-32 items-center"}
+        >
+          <h2 className="title font-extrabold text-center leading-10">
+            O que vai aprender no
+            <br />
+            <span className="text-yellow">Formação de investidores:</span>
           </h2>
-          <div className="flex flex-wrap justify-center gap-16 lg:gap-32">
-            <CardBlueWithImage
-              imgAdress={"home/icone-dinheiro.png"}
-              imgAlt={"icone de dinheiro"}
-              text={"FUNDOS DE INVESTIMENTO"}
+          <div className="grid sm:grid-cols-2 justify-center w-full gap-y-16 gap-x-48 max-w-[758px]">
+            <ModuleTopic
+              number={"1"}
+              description={"Por dentro dos investimentos."}
             />
-            <CardBlueWithImage
-              imgAdress={"home/icone-wealth-management.png"}
-              imgAlt={"icone de diamante"}
-              text={"FUNDOS EXCLUSIVOS"}
+            <ModuleTopic
+              number={"2"}
+              description={"Por dentro dos investimentos."}
             />
-            <CardBlueWithImage
-              imgAdress={"home/icone-fids.png"}
-              imgAlt={"icone de cartão e dinheiro"}
-              text={"WEALTH MANAGEMENT"}
+            <ModuleTopic
+              number={"3"}
+              description={"Por dentro dos investimentos."}
+            />
+            <ModuleTopic
+              number={"4"}
+              description={"Por dentro dos investimentos."}
+            />
+            <ModuleTopic
+              number={"5"}
+              description={"Por dentro dos investimentos."}
+            />
+          </div>
+          <a
+            href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+            target={"_blank"}
+            className="text text-black font-extrabold px-8 py-10 w-full max-w-[555px] bg-yellow rounded text-center"
+          >
+            QUERO ACESSAR TODOS OS MÓDULOS
+          </a>
+        </DefaultMarginSection>
+        <DefaultMarginSection className="flex flex-col  gap-32 sm:gap-64 relative">
+          <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -left-[200px] md:-left-[150px] lg:-left-[300px] 3xl:-left-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
+          <div className="flex flex-col items-center">
+            <h2 className="text-center title font-extrabold text-yellow">
+              CONDIÇÃO EXCLUSIVA
+              <br />
+              PRÉ INSCRIÇÃO
+            </h2>
+            <p className="title text-center">
+              DE R$ 997,00 <span className="text-yellow">POR R$ 397,00</span>
+            </p>
+            <a
+              href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+              target={"_blank"}
+              className={
+                "max-w-[415px] w-full text-center py-10 font-extrabold text text-black bg-yellow mt-8 rounded"
+              }
+            >
+              FAZER MINHA INSCRIÇÃO
+            </a>
+          </div>
+          <div className="gap-15 flex flex-wrap lg:grid lg:grid-cols-2 lg:max-w-[540px] justify-center m-auto xl:flex xl:max-w-none">
+            <CardNumber
+              number={"01"}
+              description={"Saida do zero e setorne um investidor completo"}
+            />
+            <CardNumber
+              number={"02"}
+              description={"Faça você mesmo seu dinheiro render mais"}
+            />
+            <CardNumber
+              number={"03"}
+              description={"Conheça os diferentes investimentos"}
+            />
+            <CardNumber
+              number={"04"}
+              description={
+                "Segurança e confiança para você e para a sua família"
+              }
             />
           </div>
         </DefaultMarginSection>
-        <section
-          className={
-            "px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1210px] xl:m-auto" +
-            " flex flex-col items-center gap-16 lg:gap-32"
-          }
-        >
-          <h2 className="title-responsive text-blue font-bold text-center">
-            HISTÓRICO DA GESTORA
-          </h2>
-          <p className="text-center">
-            Os fundadores da Titan Capital atuaram por anos em instituições
-            internacionais de primeira linha na construção de carteiras globais
-            de investimento com foco na compra e venda de ativos e derivativos
-            nos mercados americano e europeu.
-          </p>
-          <div className="lg:hidden">
+        <DefaultMarginSection className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-32 justify-between items-center">
+          <div className="flex flex-col gap-16 w-full lg:max-w-[430px]">
+            <h2 className="text-center lg:text-left text-[36px] lg:text-[54px] font-bold leading-[1]">
+              Com quem você vai <span className="text-yellow">aprender?</span>
+            </h2>
+            <div>
+              <p className="title font-extrabold text-yellow text-center lg:text-left">
+                Douglas Soave
+              </p>
+              <p className="text font-semibold leading-10 text-center lg:text-left">
+                Engenheiro Mecânico - Escola de Engenharia de Piracicaba,
+                Pós-graduado pela Fundação Getúlio Vargas (FGV), MBA em Gestão
+                Comercial e Negócios Sales Strategy - University of Michigan,
+                Investidor profissional - ANCORD, Diretor & Partner no grupo
+                Wise | BTG Pactual.
+              </p>
+            </div>
+          </div>
+          <figure className="relative flex md:max-w-[300px] lg:w-full lg:max-w-[577px] h-full max-h-[706px]">
+            <div className="circle-decoration-active absolute w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] z-[1] right-0 bottom-0 3xl:h-[650px] 3xl:w-[650px]"></div>
             <Image
-              src={"home/linha-do-tempo-vertifcal2.svg"}
-              alt={"História da Titan Capital"}
-              height={1186}
-              width={220}
-              style={{ objectFit: "contain", width: "269px", height: "909px" }}
-              unoptimized
+              src={"/img/douglas-footer.webp"}
+              alt={"Douglas Soave Foto"}
+              className={"object-contain"}
               loader={imageLoader}
+              width={577}
+              height={706}
+              unoptimized={true}
             />
-          </div>
-          <div className="hidden lg:block">
-            <Image
-              src={"home/linha-do-tempo2.svg"}
-              alt={"História da Titan Capital"}
-              height={1147}
-              width={336}
-              style={{ objectFit: "contain", width: "1147px", height: "336px" }}
-              unoptimized
-              loader={imageLoader}
-            />
-          </div>
-        </section>
-        {/* <DefaultMarginSectionBg
-          className="flex flex-col gap-16 lg:gap-32 -z-[10]"
-          backgroundClass="bg-dark"
-          isBackgroundImage={false}
-        >
-          <h2 className="title-responsive text-white font-semibold text-center">
-            EQUIPE
-          </h2>
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-16">
-            <CardAuthorWithHoverEffect
-              imgAdress={"home/author-1.png"}
-              title={"NOME DO AUTOR"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              }
-            />
-            <CardAuthorWithHoverEffect
-              imgAdress={"home/author-2.png"}
-              title={"NOME DO AUTOR"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              }
-            />
-            <CardAuthorWithHoverEffect
-              imgAdress={"home/author-3.png"}
-              title={"NOME DO AUTOR"}
-              text={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              }
-            />
-          </div>
-        </DefaultMarginSectionBg> */}
-        {/* <FaleComAGenteSection /> */}
+          </figure>
+        </DefaultMarginSection>
       </main>
     </>
   );
