@@ -145,7 +145,7 @@ export default function Home() {
             <CardWithImage
               imgAdress={"/img/card-image-8.webp"}
               imgAlt={"Globo terrestre olográfico com conexões"}
-              title={"BDR'S"}
+              title={"BDRs"}
             />
             <CardWithImage
               imgAdress={"/img/card-image-9.webp"}
@@ -303,11 +303,11 @@ export default function Home() {
                 Douglas Soave
               </p>
               <p className="text font-semibold leading-10 text-center lg:text-left">
-                Engenheiro Mecânico - Escola de Engenharia de Piracicaba,
-                Pós-graduado pela Fundação Getúlio Vargas (FGV), MBA em Gestão
-                Comercial e Negócios Sales Strategy - University of Michigan,
                 Investidor profissional - ANCORD, Diretor & Partner no grupo
-                Wise | BTG Pactual.
+                Wise | BTG Pactual; MBA em Gestão Comercial e Negócios Sales
+                Strategy - University of Michigan; Pós-graduado pela Fundação
+                Getúlio Vargas (FGV); Engenheiro Mecânico - Escola de Engenharia
+                de Piracicaba.
               </p>
             </div>
           </div>
