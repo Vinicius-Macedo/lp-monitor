@@ -49,7 +49,7 @@ export default function Home() {
               <Image
                 src={"/img/hero-photo.webp"}
                 alt={"Douglas Soave"}
-                className="w-full h-full object-cover z-[2] max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
+                className="object-contain z-[2] w-[300px] xl:w-[520px]"
                 loader={imageLoader}
                 width={540}
                 height={729}
