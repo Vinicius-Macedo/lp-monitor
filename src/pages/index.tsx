@@ -51,11 +51,9 @@ export default function Home() {
                 alt={"Douglas Soave"}
                 className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
                 // loader={imageLoader}
-                width={540}
-                height={729}
                 // priority={true}
                 // unoptimized
-                decoding="sync"
+                // decoding="sync"
               />
             </figure>
           </div>
