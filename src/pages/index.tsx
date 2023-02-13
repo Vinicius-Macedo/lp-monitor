@@ -19,7 +19,7 @@ export default function Home() {
             }
           >
             <div className="max-w-[665px] flex flex-col gap-12 items-center lg:items-start">
-              <h1 className="text-center text-[22.5px] xl:text-[36px] font-extrabold md:text-left lg:text-justify">
+              <h1 className="text-center text-[1.4063rem] xl:text-[2.25rem] font-extrabold md:text-left lg:text-justify">
                 Aprenda escolher os{" "}
                 <span className="text-yellow">
                   melhores investimentos e acelerar seus resultados.
@@ -46,14 +46,16 @@ export default function Home() {
             </div>
             <figure className="relative flex justify-center xl:-mr-30">
               <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
-              <img
-                alt="Douglas Soave"
-                src="/img/hero-photo.webp"
-                // width="540"
-                // height="729"
-                decoding="sync"
-                className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
-                style={{ color: "transparent" }}
+              <Image
+                src={"/img/hero-photo.webp"}
+                alt={"Douglas Soave"}
+                className="w-full h-full object-cover z-[2] max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
+                loader={imageLoader}
+                width={540}
+                height={729}
+                priority={true}
+                loading={"eager"}
+                unoptimized
               />
             </figure>
           </div>
