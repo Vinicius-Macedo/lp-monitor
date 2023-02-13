@@ -35,7 +35,7 @@ export default function Home() {
                   Faça agora sua matrícula
                 </p>
                 <a
-                  href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+                  href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
                   target={"_blank"}
                   rel="noreferrer"
                   className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
@@ -210,7 +210,7 @@ export default function Home() {
               </div>
             </div>
             <a
-              href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+              href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
               target={"_blank"}
               rel="noreferrer"
               className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold py-12 w-full max-w-[449px] text-[22px] sm:text-[32px] text-center rounded"
@@ -249,7 +249,7 @@ export default function Home() {
             />
           </div>
           <a
-            href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+            href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
             target={"_blank"}
             rel="noreferrer"
             className="text text-black font-extrabold px-8 py-10 w-full max-w-[555px] bg-yellow hover:bg-[#d6bc29]  rounded text-center"
@@ -269,7 +269,7 @@ export default function Home() {
               DE R$ 997,00 <span className="text-yellow">POR R$ 397,00</span>
             </p>
             <a
-              href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+              href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
               target={"_blank"}
               rel="noreferrer"
               className={
