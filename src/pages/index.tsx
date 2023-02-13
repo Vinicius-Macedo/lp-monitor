@@ -53,7 +53,7 @@ export default function Home() {
                 // loader={imageLoader}
                 // priority={true}
                 // unoptimized
-                // decoding="sync"
+                decoding="sync"
               />
             </figure>
           </div>
