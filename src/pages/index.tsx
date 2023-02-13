@@ -12,49 +12,54 @@ export default function Home() {
   return (
     <>
       <main className="bg-black overflow-hidden">
-        <DefaultMarginSection
-          hasNoEffect={true}
-          className="flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32"
-        >
-          <div className="max-w-[665px] flex flex-col gap-12 items-center lg:items-start">
-            <h1 className="text-center text-[22.5px] xl:text-[36px] font-extrabold md:text-left lg:text-justify">
-              Aprenda escolher os{" "}
-              <span className="text-yellow">
-                melhores investimentos e acelerar seus resultados.
-              </span>{" "}
-              Conheça os conceitos e práticas de investimentos para tomar as
-              melhores decisões e montar{" "}
-              <span className="text-yellow">
-                uma carteira de investimentos lucrativa.
-              </span>
-            </h1>
-            <div className="flex flex-col items-center gap-2 w-full lg:items-start">
-              <p className="semititle text-center md:text-left">
-                Faça agora sua matrícula
-              </p>
-              <a
-                href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
-                target={"_blank"}
-                rel="noreferrer"
-                className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
-              >
-                QUERO GARANTIR MINHA VAGA
-              </a>
+        <section>
+          <div
+            className={
+              "px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1110px] xl:m-auto flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32"
+            }
+          >
+            <div className="max-w-[665px] flex flex-col gap-12 items-center lg:items-start">
+              <h1 className="text-center text-[22.5px] xl:text-[36px] font-extrabold md:text-left lg:text-justify">
+                Aprenda escolher os{" "}
+                <span className="text-yellow">
+                  melhores investimentos e acelerar seus resultados.
+                </span>{" "}
+                Conheça os conceitos e práticas de investimentos para tomar as
+                melhores decisões e montar{" "}
+                <span className="text-yellow">
+                  uma carteira de investimentos lucrativa.
+                </span>
+              </h1>
+              <div className="flex flex-col items-center gap-2 w-full lg:items-start">
+                <p className="semititle text-center md:text-left">
+                  Faça agora sua matrícula
+                </p>
+                <a
+                  href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
+                >
+                  QUERO GARANTIR MINHA VAGA
+                </a>
+              </div>
             </div>
+            <figure className="relative flex justify-center xl:-mr-30">
+              <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
+              <Image
+                src={"/img/hero-photo.webp"}
+                alt={"Douglas Soave"}
+                className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
+                loader={imageLoader}
+                width={540}
+                height={729}
+                priority
+                unoptimized
+              />
+            </figure>
           </div>
-          <figure className="relative flex justify-center xl:-mr-30">
-            <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
-            <Image
-              src={"/img/hero-photo.webp"}
-              alt={"Douglas Soave"}
-              className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
-              loader={imageLoader}
-              width={540}
-              height={729}
-              unoptimized
-            />
-          </figure>
-        </DefaultMarginSection>
+        </section>
+
         <DefaultMarginSection className="flex flex-col gap-32 relative">
           <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -left-[200px] md:-left-[150px] lg:-left-[300px] 3xl:-left-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
 
