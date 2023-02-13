@@ -49,8 +49,6 @@ export default function Home() {
               <img
                 alt="Douglas Soave"
                 src="/img/hero-photo.webp"
-                width="540"
-                height="729"
                 decoding="sync"
                 data-nimg="1"
                 className="object-contain z-[2] w-[300px] xl:w-[520px]"
