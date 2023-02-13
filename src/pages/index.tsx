@@ -49,10 +49,9 @@ export default function Home() {
               <img
                 alt="Douglas Soave"
                 src="/img/hero-photo.webp"
-                width="540"
-                height="729"
+                // width="540"
+                // height="729"
                 decoding="sync"
-                data-nimg="1"
                 className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
                 style={{ color: "transparent" }}
               />
