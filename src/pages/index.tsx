@@ -47,13 +47,14 @@ export default function Home() {
             <figure className="relative flex justify-center xl:-mr-30">
               <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
               <img
-                src={"/img/hero-photo.webp"}
-                alt={"Douglas Soave"}
-                className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
-                // loader={imageLoader}
-                // priority={true}
-                // unoptimized
+                alt="Douglas Soave"
+                src="/img/hero-photo.webp"
+                width="540"
+                height="729"
                 decoding="sync"
+                data-nimg="1"
+                className="w-full h-full object-cover z-[2] relative max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
+                style={{ color: "transparent" }}
               />
             </figure>
           </div>
