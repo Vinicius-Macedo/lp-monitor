@@ -15,10 +15,25 @@ export default function Home() {
         <section>
           <div
             className={
-              "px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1110px] xl:m-auto flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32"
+              "px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[69.375rem] xl:m-auto items-center md:flex md:flex-row-reverse md:justify-between overflow-hidden xl:overflow-visible xl:pt-32"
             }
           >
-            <div className="max-w-[665px] flex flex-col gap-12 items-center lg:items-start">
+            <figure className="relative flex justify-center xl:-mr-30">
+              <div className="circle-decoration-active absolute w-[25rem] h-[25rem] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[37.5rem] xl:h-[37.5rem]"></div>
+              <img
+                src={"/img/hero-photo.webp"}
+                alt={"Douglas Soave"}
+                className="w-full h-full object-cover z-[2] max-w-[18.75rem] lg:max-w-[25rem] xl:max-w-[33.75rem]"
+                // loader={imageLoader}
+                // width={540}
+                // height={729}
+                // priority={true}
+                loading={"eager"}
+                decoding={"sync"}
+                // unoptimized
+              />
+            </figure>
+            <div className="md:max-w-[25rem] lg:max-w-[34.375rem] xl:max-w-[max-w-[41.5625rem] flex flex-col gap-12 items-center lg:items-start">
               <h1 className="text-center text-[1.4063rem] xl:text-[2.25rem] font-extrabold md:text-left lg:text-justify">
                 Aprenda escolher os{" "}
                 <span className="text-yellow">
@@ -30,7 +45,7 @@ export default function Home() {
                   uma carteira de investimentos lucrativa.
                 </span>
               </h1>
-              <div className="flex flex-col items-center gap-2 w-full lg:items-start">
+              <div className="flex flex-col items-center gap-2 w-full md:items-start">
                 <p className="semititle text-center md:text-left">
                   Faça agora sua matrícula
                 </p>
@@ -38,27 +53,12 @@ export default function Home() {
                   href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
                   target={"_blank"}
                   rel="noreferrer"
-                  className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
+                  className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[26.5625rem] text text-center"
                 >
                   QUERO GARANTIR MINHA VAGA
                 </a>
               </div>
             </div>
-            <figure className="relative flex justify-center xl:-mr-30">
-              <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
-              <img
-                src={"/img/hero-photo.webp"}
-                alt={"Douglas Soave"}
-                className="w-full h-full object-cover z-[2] max-w-[300px] lg:max-w-[400px] xl:max-w-[540px]"
-                // loader={imageLoader}
-                // width={540}
-                // height={729}
-                // priority={true}
-                loading={"eager"}
-                decoding={"sync"}
-                // unoptimized
-              />
-            </figure>
           </div>
         </section>
 
