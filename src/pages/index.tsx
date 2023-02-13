@@ -46,17 +46,23 @@ export default function Home() {
             </div>
             <figure className="relative flex justify-center xl:-mr-30">
               <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
-              <img
-                alt="Douglas Soave"
-                src="/img/hero-photo.webp"
-                width="300"
-                height="405"
-                decoding="sync"
-                data-nimg="1"
-                className="object-contain z-[2] w-[300px] xl:w-[520px]"
-                loading="eager"
-                style={{ color: "transparent" }}
-              />
+              <picture>
+                <source
+                  media="(max-width:500px)"
+                  srcSet="/img/hero-photo-p.webp"
+                />
+                <img
+                  alt="Douglas Soave"
+                  src="/img/hero-photo.webp"
+                  width="300"
+                  height="405"
+                  decoding="sync"
+                  data-nimg="1"
+                  className="object-contain z-[2] w-[300px] xl:w-[520px]"
+                  loading="eager"
+                  style={{ color: "transparent" }}
+                />
+              </picture>
             </figure>
           </div>
         </section>
