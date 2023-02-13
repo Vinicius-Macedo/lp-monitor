@@ -53,7 +53,7 @@ export default function Home() {
                 loader={imageLoader}
                 width={540}
                 height={729}
-                priority
+                priority={true}
                 unoptimized
               />
             </figure>
