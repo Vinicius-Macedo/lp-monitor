@@ -52,6 +52,7 @@ export function DefaultMarginSection(props: DefaultMarginSectionProps) {
         </section>
       ) : (
         <section
+          ref={ref}
           id={props.id}
           className={props.containerClassName}
           style={props.styles}

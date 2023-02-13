@@ -19,8 +19,9 @@ export function Header() {
           <Image
             src={"/img/monitor-do-mercado.webp"}
             alt={"Logo do monitor do mercado"}
-            style={{ width: "100%", height: "100%", objectFit: "contain" }}
-            fill
+            style={{ width: "auto", height: "auto", objectFit: "contain" }}
+            width={247}
+            height={61}
             loader={imageLoader}
             unoptimized
           />

@@ -23,10 +23,11 @@ export default function Footer() {
         src={"/img/monitor-do-mercado.webp"}
         alt={"Logo monitor do mercado"}
         className="object-contain"
+        style={{ width: "auto", height: "auto" }}
         width={247}
         height={61}
         loader={imageLoader}
-        unoptimized={false}
+        unoptimized
       />
     </footer>
   );

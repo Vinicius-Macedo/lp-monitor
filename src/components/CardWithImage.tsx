@@ -16,10 +16,13 @@ export default function CardWithImage(props: CardWithImageProps) {
         alt={props.imgAlt}
         width={345}
         height={228}
+        className="w-auto h-auto"
         loader={imageLoader}
         unoptimized
       />
-      <h3 className="bg-yellow text-black text-center py-5 font-extrabold">{props.title}</h3>
+      <h3 className="bg-yellow text-black text-center py-5 font-extrabold">
+        {props.title}
+      </h3>
     </div>
   );
 }
