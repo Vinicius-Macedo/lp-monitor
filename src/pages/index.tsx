@@ -318,6 +318,7 @@ export default function Home() {
               alt={"Douglas Soave Foto"}
               className={"object-contain"}
               loader={imageLoader}
+              decoding={"sync"}
               width={577}
               height={706}
               unoptimized={true}
