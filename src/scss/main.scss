@@ -17,6 +17,11 @@ html {
 @import "partials/header";
 @import "partials/footer";
 
+body {
+  @apply bg-black
+  text-white;
+}
+
 .title {
   @apply text-[32px] lg:text-[36px];
 }
@@ -75,7 +80,6 @@ html {
   background-color: #ffd000;
   border-radius: 999px;
 }
-
 
 .element {
   position: relative;

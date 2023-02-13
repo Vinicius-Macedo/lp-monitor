@@ -4,11 +4,6 @@ import Image from "next/image";
 const imageLoader = require("./../loader.js");
 
 export function Header() {
-  useEffect(() => {
-    document.getElementsByTagName("body")[0].classList.add("bg-black");
-    document.getElementsByTagName("body")[0].classList.add("text-white");
-  }, []);
-
   return (
     <header className="flex justify-between w-full max-w-[1110px] px-16 xl:px-0 pt-16 m-auto">
       <div>
