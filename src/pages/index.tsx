@@ -18,8 +18,8 @@ export default function Home() {
               "px-8 py-32 sm:px-16 md:py-64 xl:px-0 xl:w-[1110px] xl:m-auto flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32"
             }
           >
-            <div className="max-w-[665px] flex flex-col gap-12 items-center lg:items-start">
-              <h1 className="text-center text-[22.5px] xl:text-[36px] font-extrabold md:text-left lg:text-justify">
+            <div className="max-w-[665px] xl:w-[665px] flex flex-col gap-12 items-center lg:items-start">
+              <h1 className="text-center text-[1.4063rem] xl:text-[2.25rem] font-extrabold md:text-left lg:text-justify">
                 Aprenda escolher os{" "}
                 <span className="text-yellow">
                   melhores investimentos e acelerar seus resultados.
@@ -49,6 +49,8 @@ export default function Home() {
               <img
                 alt="Douglas Soave"
                 src="/img/hero-photo.webp"
+                width="300"
+                height="405"
                 decoding="sync"
                 data-nimg="1"
                 className="object-contain z-[2] w-[300px] xl:w-[520px]"
