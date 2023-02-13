@@ -1,5 +1,5 @@
 const imageLoader = require("./../loader.js");
-import Image, { ImageLoaderProps } from "next/image";
+import Image from "next/image";
 import CardNumber from "../components/CardNumber";
 import CardWithImage from "../components/CardWithImage";
 
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <main className="bg-black overflow-hidden">
-        <DefaultMarginSection className="flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32">
+        <DefaultMarginSection hasNoEffect={true} className="flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32">
           <div className="max-w-[665px] flex flex-col gap-12 items-center lg:items-start">
             <h1 className="text-center text-[22.5px] xl:text-[36px] font-extrabold md:text-left lg:text-justify">
               Aprenda escolher os{" "}
@@ -32,7 +32,7 @@ export default function Home() {
               <a
                 href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
                 target={"_blank"}
-                className="bg-yellow text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
+                className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
               >
                 QUERO GARANTIR MINHA VAGA
               </a>
@@ -51,8 +51,9 @@ export default function Home() {
             />
           </figure>
         </DefaultMarginSection>
-        <DefaultMarginSection className="flex flex-col gap-32 relative">
+        <DefaultMarginSection  className="flex flex-col gap-32 relative">
           <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -left-[200px] md:-left-[150px] lg:-left-[300px] 3xl:-left-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
+
           <h2 className="title font-extrabold text-center">
             O QUE O{" "}
             <span className="text-yellow">FORMAÇÃO DE INVESTIDORES</span>
@@ -83,6 +84,7 @@ export default function Home() {
             />
           </div>
         </DefaultMarginSection>
+
         <DefaultMarginSection className="flex flex-col items-center m-auto gap-32">
           <div className="max-w-[652px]">
             <p className="text text-gray font-normal text-center leading-8	">
@@ -194,13 +196,13 @@ export default function Home() {
             <a
               href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
               target={"_blank"}
-              className="bg-yellow text-black font-extrabold py-12 w-full max-w-[449px] text-[22px] sm:text-[32px] text-center rounded"
+              className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold py-12 w-full max-w-[449px] text-[22px] sm:text-[32px] text-center rounded"
             >
               FAZER MINHA INSCRIÇÃO
             </a>
           </div>
         </DefaultMarginSection>
-        <DefaultMarginSection
+        <DefaultMarginSection hasNoEffect={true}
           containerClassName="background-image-default z-[3] relative"
           className={"flex flex-col gap-32 items-center"}
         >
@@ -216,15 +218,15 @@ export default function Home() {
             />
             <ModuleTopic
               number={"2"}
-              description={"Por dentro dos investimentos."}
+              description={"Atributos que fazem a diferença."}
             />
             <ModuleTopic
               number={"3"}
-              description={"Por dentro dos investimentos."}
+              description={"Por dentro da Renda Fixa."}
             />
             <ModuleTopic
               number={"4"}
-              description={"Por dentro dos investimentos."}
+              description={"O poder da Renda Fixa."}
             />
             <ModuleTopic
               number={"5"}
@@ -234,7 +236,7 @@ export default function Home() {
           <a
             href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
             target={"_blank"}
-            className="text text-black font-extrabold px-8 py-10 w-full max-w-[555px] bg-yellow rounded text-center"
+            className="text text-black font-extrabold px-8 py-10 w-full max-w-[555px] bg-yellow hover:bg-[#d6bc29]  rounded text-center"
           >
             QUERO ACESSAR TODOS OS MÓDULOS
           </a>
@@ -254,7 +256,7 @@ export default function Home() {
               href="https://pay.hotmart.com/A78289712N?off=2vg8j3lo&bid=1674482696855"
               target={"_blank"}
               className={
-                "max-w-[415px] w-full text-center py-10 font-extrabold text text-black bg-yellow mt-8 rounded"
+                "max-w-[415px] w-full text-center py-10 font-extrabold text text-black bg-yellow hover:bg-[#d6bc29]  mt-8 rounded"
               }
             >
               FAZER MINHA INSCRIÇÃO

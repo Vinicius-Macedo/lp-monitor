@@ -75,3 +75,16 @@ html {
   background-color: #ffd000;
   border-radius: 999px;
 }
+
+
+.element {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.element.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
