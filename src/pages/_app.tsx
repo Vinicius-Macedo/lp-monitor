@@ -55,6 +55,8 @@ export default function App({ Component, pageProps }: AppProps) {
           property="twitter:image"
           content="/img/social-media-card.png"
         />
+        <link rel="preload" as="image" href="/your-image-file.jpg"/>
+
       </Head>
       <Header />
       <Component {...pageProps} />
