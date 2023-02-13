@@ -23,6 +23,7 @@ export function Header() {
             width={247}
             height={61}
             loader={imageLoader}
+            priority
             unoptimized
           />
         </figure>

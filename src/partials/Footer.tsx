@@ -22,8 +22,7 @@ export default function Footer() {
       <Image
         src={"/img/monitor-do-mercado.webp"}
         alt={"Logo monitor do mercado"}
-        className="object-contain"
-        style={{ width: "auto", height: "auto" }}
+        style={{ width: "auto", height: "auto", objectFit: "contain" }}
         width={247}
         height={61}
         loader={imageLoader}
