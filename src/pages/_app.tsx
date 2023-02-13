@@ -36,13 +36,13 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Aprenda escolher os melhores investimentos e acelerar seus resultados. Conheça os conceitos e práticas de investimentos para tomar as melhores decisões e montar uma carteira de investimentos lucrativa."
         />
-        <meta
-          property="og:image"
-          content="/img/social-media-card.png"
-        />
+        <meta property="og:image" content="/img/social-media-card.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://canvas-monitor.vercel.app/" />
+        <meta
+          property="twitter:url"
+          content="https://canvas-monitor.vercel.app/"
+        />
         <meta
           property="twitter:title"
           content="Formação de Investidores - Monitor do Mercado"
@@ -51,12 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
           property="twitter:description"
           content="Aprenda escolher os melhores investimentos e acelerar seus resultados. Conheça os conceitos e práticas de investimentos para tomar as melhores decisões e montar uma carteira de investimentos lucrativa."
         />
-        <meta
-          property="twitter:image"
-          content="/img/social-media-card.png"
-        />
-        <link rel="preload" as="image" href="/your-image-file.jpg"/>
-
+        <meta property="twitter:image" content="/img/social-media-card.png" />
       </Head>
       <Header />
       <Component {...pageProps} />
