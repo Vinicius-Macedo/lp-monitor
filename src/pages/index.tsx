@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <main className="overflow-hidden">
         <DefaultMarginSection
+          hasNoEffect={true}
           styles={{ backgroundImage: "url('/img/hero-background.webp')" }}
           containerClassName={"bg-cover bg-no-repeat"}
           className={"flex flex-col items-center lg:items-start"}
@@ -23,7 +24,7 @@ export default function Home() {
             unoptimized
             loader={imageLoader}
           />
-          <div className="max-w-[730px] flex flex-col items-center lg:items-start gap-8 lg:py-32">
+          <div className="max-w-[730px] flex flex-col items-center lg:items-start gap-8">
             <h1 className="title font-medium text-white text-center lg:text-left ">
               ACOMPANHE AS{" "}
               <span className="text-orange">PRINCIPAIS NOTÍCIAS</span> E
@@ -50,6 +51,7 @@ export default function Home() {
           />
         </DefaultMarginSection>
         <DefaultMarginSection
+          hasNoEffect={true}
           containerClassName={"bg-cover bg-no-repeat"}
           styles={{
             backgroundImage: "url('/img/square-background-repeat.webp')",
@@ -90,6 +92,7 @@ export default function Home() {
           </div>
         </DefaultMarginSection>
         <DefaultMarginSection
+          hasNoEffect={true}
           containerClassName="bg-cover bg-no-repeat"
           styles={{ backgroundImage: "url('/img/phone-background.webp')" }}
           className="flex flex-col items-center gap-16 lg:flex-row-reverse"
@@ -103,7 +106,7 @@ export default function Home() {
             height={612}
             loader={imageLoader}
           />
-          <div className="flex flex-col items-center lg:items-start gap-16 xl:gap-32">
+          <div className="flex flex-col items-center max-w-[605px] lg:items-start gap-16 xl:gap-32">
             <p className="semi-title font-bold text-white text-center lg:text-left">
               <span className="text-orange">O MONITOR DO MERCADO</span> É UMA
               PLATAFORMA DE{" "}
@@ -176,6 +179,7 @@ export default function Home() {
           </div>
         </DefaultMarginSection>
         <DefaultMarginSection
+          hasNoEffect={true}
           styles={{
             background:
               "radial-gradient(50% 50% at 50% 50%, #353432 0%, #333331 100%)",
