@@ -42,7 +42,7 @@ export function DefaultMarginSection(props: DefaultMarginSectionProps) {
           <div
             className={
               "px-8 py-32 sm:px-16 md:py-32 xl:px-0 xl:w-[1110px] xl:m-auto" +
-              (props.hasNoMarginTop ? " xl:pt-0" : "") +
+              (props.hasNoMarginTop ? " pt-0 md:pt-0 xl:pt-0" : "") +
               (props.hasNoMarginBottom ? " xl:pb-0" : "") +
               (props.className ? " " + props.className : "")
             }
@@ -52,7 +52,6 @@ export function DefaultMarginSection(props: DefaultMarginSectionProps) {
         </section>
       ) : (
         <section
-          ref={ref}
           id={props.id}
           className={props.containerClassName}
           style={props.styles}

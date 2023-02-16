@@ -1,335 +1,254 @@
 const imageLoader = require("./../loader.js");
 import Image from "next/image";
-import CardNumber from "../components/CardNumber";
-import CardWithImage from "../components/CardWithImage";
-
+import BottomCard from "../components/BottomCard";
 import { DefaultMarginSection } from "../components/DefaultMarginSection";
-import IconWithText from "../components/IconWithText";
-import ModuleTopic from "../components/ModuleTopic";
-import Topics from "../components/Topics";
+import { SimpleCard } from "../components/SimpleCard";
+import { TopicText } from "../components/TopicText";
 
 export default function Home() {
   return (
     <>
-      <main className="bg-black overflow-hidden">
-        <section>
-          <div
-            className={
-              "px-8 py-32 sm:px-16 md:py-32 xl:px-0 xl:w-[1110px] xl:m-auto flex flex-col-reverse items-center md:grid grid-cols-2 xl:flex xl:flex-row overflow-hidden xl:overflow-visible xl:pt-32"
-            }
-          >
-            <div className="max-w-[665px] xl:w-[665px] flex flex-col gap-12 items-center lg:items-start">
-              <h1 className="text-center text-[1.4063rem] xl:text-[2.25rem] font-extrabold md:text-left lg:text-justify">
-                Aprenda escolher os{" "}
-                <span className="text-yellow">
-                  melhores investimentos e acelerar seus resultados.
-                </span>{" "}
-                Conheça os conceitos e práticas de investimentos para tomar as
-                melhores decisões e montar{" "}
-                <span className="text-yellow">
-                  uma carteira de investimentos lucrativa.
-                </span>
-              </h1>
-              <div className="flex flex-col items-center gap-2 w-full lg:items-start">
-                <p className="semititle text-center md:text-left">
-                  Faça agora sua matrícula
-                </p>
-                <a
-                  href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
-                  target={"_blank"}
-                  rel="noreferrer"
-                  className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold px-8 py-4 lg:px-16 lg:py-12 rounded max-w-[425px] text text-center"
-                >
-                  QUERO GARANTIR MINHA VAGA
-                </a>
-              </div>
-            </div>
-            <figure className="relative flex justify-center xl:-mr-30">
-              <div className="circle-decoration-active absolute w-[400px] h-[400px] z-[1] left-1/2 top-1/2 -translate-x-1/2 -translate-y-[50%] xl:w-[600px] xl:h-[600px]"></div>
-              <picture>
-                <source
-                  media="(max-width:500px)"
-                  srcSet="/img/hero-photo-p.webp"
-                />
-                <img
-                  alt="Douglas Soave"
-                  src="/img/hero-photo.webp"
-                  width="300"
-                  height="405"
-                  decoding="sync"
-                  data-nimg="1"
-                  className="object-contain z-[2] w-[300px] xl:w-[520px]"
-                  loading="eager"
-                  style={{ color: "transparent" }}
-                />
-              </picture>
-            </figure>
-          </div>
-        </section>
-
-        <DefaultMarginSection className="flex flex-col gap-32 relative">
-          <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -left-[200px] md:-left-[150px] lg:-left-[300px] 3xl:-left-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
-
-          <h2 className="title font-extrabold text-center">
-            O QUE O{" "}
-            <span className="text-yellow">FORMAÇÃO DE INVESTIDORES</span>
-            <br /> IRÁ ENTREGAR:
-          </h2>
-          <div className="flex flex-wrap justify-center xl:justify-between gap-16 relative">
-            <IconWithText
-              imgAdress={"/img/icon-book.webp"}
-              imgAlt={"icone de livro"}
-              title={"Conteúdo"}
-              text={"5 Módulos de conteúdo exclusivo"}
-            />
-            <IconWithText
-              imgAdress={"/img/icon-clock.webp"}
-              imgAlt={"icone de relógio"}
-              title={"Inicio das aulas"}
-              text={
-                "Modelo flexível para adaptar a sua rotina com aulas gravadas."
-              }
-            />
-            <IconWithText
-              imgAdress={"/img/icon-screen.webp"}
-              imgAlt={"icone de tela"}
-              title={"Duração"}
-              text={
-                "Com método estruturado e pragmático, o curso conta com 5 horas de duração"
-              }
-            />
-          </div>
-        </DefaultMarginSection>
-
-        <DefaultMarginSection className="flex flex-col items-center m-auto gap-32">
-          <div className="max-w-[652px]">
-            <p className="text text-gray font-normal text-center leading-8	">
-              Com linguagem simples e objetiva, conheça os tipos de
-              investimentos e faça o seu dinheiro render de verdade!
+      <main className="overflow-hidden">
+        <DefaultMarginSection
+          styles={{ backgroundImage: "url('/img/hero-background.webp')" }}
+          containerClassName={"bg-cover bg-no-repeat"}
+          className={"flex flex-col items-center lg:items-start"}
+        >
+          <Image
+            src={"/img/happy-men-phone.webp"}
+            alt={"Homem feliz segurando celular"}
+            className={"lg:-right-30 xl:right-[5vw] lg:bottom-0 lg:absolute "}
+            width={453}
+            height={591}
+            unoptimized
+            loader={imageLoader}
+          />
+          <div className="max-w-[730px] flex flex-col items-center lg:items-start gap-8 lg:py-32">
+            <h1 className="title font-medium text-white text-center lg:text-left ">
+              ACOMPANHE AS{" "}
+              <span className="text-orange">PRINCIPAIS NOTÍCIAS</span> E
+              ANÁLISES, QUE{" "}
+              <span className="text-orange">IMPACTAM O MERCADO</span>
+            </h1>
+            <p className="semi-title text-white text-center lg:text-left">
+              TOME MELHORES DECISÕES PARA OS SEUS INVESTIMENTOS
             </p>
-            <h2 className="text-center text-yellow font-extrabold title max-w-[652px]">
-              OS SEGREDOS REVELEADOS SOBRE
-            </h2>
-          </div>
-          <div className="flex flex-wrap gap-15 justify-center items-center w-full m-auto">
-            <CardWithImage
-              imgAdress={"/img/card-image-3.webp"}
-              imgAlt={"Segurando globo com olograma terrestre"}
-              title={"PRINCÍPIOS FUNDAMENTAIS"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-2.webp"}
-              imgAlt={"Olograma de gráficos subindo"}
-              title={"MONTAGEM DE CARTEIRA"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-4.webp"}
-              imgAlt={"Dólars com calculadora e gráficos"}
-              title={"COMO INVESTIR"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-5.webp"}
-              imgAlt={"Copo com uma planta e moedas no lugar da terra"}
-              title={"FUNDOS DE INVESTIMENTOS"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-1.webp"}
-              imgAlt={"Olograma de gráficos subindo"}
-              title={"RENDA FIXA"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-6.webp"}
-              imgAlt={"Gráficos subindo"}
-              title={"AÇÕES"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-7.webp"}
-              imgAlt={
-                "Olagrama com opções e uma pessoa apertando o botão investment"
-              }
-              title={"OPÇÕES"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-8.webp"}
-              imgAlt={"Globo terrestre olográfico com conexões"}
-              title={"BDRs"}
-            />
-            <CardWithImage
-              imgAdress={"/img/card-image-9.webp"}
-              imgAlt={"celular com ilustração de casa em cima"}
-              title={"FUNDOS IMOBILIÁRIOS"}
-            />
-          </div>
-        </DefaultMarginSection>
-        <DefaultMarginSection className="relative flex justify-center flex-wrap gap-32 lg:gap-0 lg:justify-between">
-          <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -right-[200px] md:-right-[150px] lg:-right-[300px] 3xl:-right-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
-          <div>
-            <h2 className="font-bold title leading-10 text-center lg:text-left lg:w-[268px]">
-              Invista no seu conhecimento!
-            </h2>
-            <div>
-              <Topics
-                number={"01"}
-                topic={"LIBERDADE"}
-                text={"Aprenda de onde você estiver."}
-              />
-              <Topics
-                number={"02"}
-                topic={"AUTONOMIA"}
-                text={
-                  "Organize seus estudos de acordo com à sua disponibilidade"
-                }
-              />
-              <Topics
-                number={"03"}
-                topic={"SUPER BONÛS"}
-                text={
-                  "Duas aulas AO VIVO com contéudos exclusivos + tira dúvidas"
-                }
-              />
-            </div>
-          </div>
-          <div className="flex flex-col items-start gap-6">
-            <div>
-              <p className="font-bold title">Faça sua inscrição AGORA!</p>
-              <p className="text-yellow text-[24px]">
-                CONDIÇÃO EXCLUSIVA PRÉ-INSCRIÇÃO
-                <br />
-                <span className="text-white">
-                  DE R$ <span className="line-through">997,00</span>
-                </span>
-              </p>
-              <div className="flex items-center gap-8">
-                <div className="text-yellow flex flex-col items-center">
-                  <p className="text">POR</p>
-                  <p className="text-[36px] font-bold leading-6">R$</p>
-                </div>
-                <p className="text-yellow text-[80px] sm:text-[120px] font-extrabold gap-4 leading-[1]">
-                  397,00
-                </p>
-              </div>
-            </div>
             <a
-              href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
-              target={"_blank"}
-              rel="noreferrer"
-              className="bg-yellow hover:bg-[#d6bc29]  text-black font-extrabold py-12 w-full max-w-[449px] text-[22px] sm:text-[32px] text-center rounded"
+              className="semi-title text-white bg-orange font-medium py-6 px-16 rounded"
+              href="#"
             >
-              FAZER MINHA INSCRIÇÃO
+              SAIBA MAIS
             </a>
+          </div>
+          <Image
+            className="absolute left-0 bottom-0 z-[1] object-contain"
+            src={"/img/bell-icon.webp"}
+            alt={"Icone de sino"}
+            width={100}
+            height={80}
+            loader={imageLoader}
+          />
+        </DefaultMarginSection>
+        <DefaultMarginSection
+          containerClassName={"bg-cover bg-no-repeat"}
+          styles={{
+            backgroundImage: "url('/img/square-background-repeat.webp')",
+          }}
+          className={
+            "flex flex-col gap-16 items-center lg:flex-row lg:justify-between"
+          }
+        >
+          <Image
+            src={"/img/graphic-illustration.webp"}
+            alt={""}
+            width={1072}
+            height={474}
+            loader={imageLoader}
+            unoptimized
+            className="absolute left-0 top-0 object-contain z-[1]"
+          />
+          <Image
+            src={"/img/notification-alert.svg"}
+            className={"object-contain relative"}
+            alt={""}
+            width={305}
+            height={59}
+            loader={imageLoader}
+          />
+          <div className="lg:py-32">
+            <div className="p-8 flex flex-col gap-4 bg-[#E9E9E9] max-w-[525px] relative">
+              <p className="semi-title font-medium">
+                <span className="text-orange">PREPARE-SE</span> PARA RECEBER
+                INFORMAÇÕES <span className="text-orange">VALIOSAS</span> SOBRE{" "}
+                <span className="text-orange">SEUS INVESTIMENTOS.</span>
+              </p>
+              <p className="text text-orange underline font-medium">
+                POTENCIALIZE SUA CAPACIDADE DE TOMAR DECISÕES ACERTIVAS E
+                ALCANÇAR SEUS OBJETIVOS FINANCEIROS.
+              </p>
+            </div>
           </div>
         </DefaultMarginSection>
         <DefaultMarginSection
-          hasNoEffect={true}
-          containerClassName="background-image-default z-[3] relative"
-          className={"flex flex-col gap-32 items-center"}
+          containerClassName="bg-cover bg-no-repeat"
+          styles={{ backgroundImage: "url('/img/phone-background.webp')" }}
+          className="flex flex-col items-center gap-16 lg:flex-row-reverse"
         >
-          <h2 className="title font-extrabold text-center leading-10">
-            O que vai aprender no
-            <br />
-            <span className="text-yellow">Formação de investidores:</span>
-          </h2>
-          <div className="grid sm:grid-cols-2 justify-center w-full gap-y-16 gap-x-48 max-w-[758px]">
-            <ModuleTopic
-              number={"1"}
-              description={"Por dentro dos investimentos."}
-            />
-            <ModuleTopic
-              number={"2"}
-              description={"Atributos que fazem a diferença."}
-            />
-            <ModuleTopic
-              number={"3"}
-              description={"Por dentro da Renda Fixa."}
-            />
-            <ModuleTopic number={"4"} description={"O poder da Renda Fixa."} />
-            <ModuleTopic
-              number={"5"}
-              description={"Por dentro dos investimentos."}
-            />
-          </div>
-          <a
-            href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
-            target={"_blank"}
-            rel="noreferrer"
-            className="text text-black font-extrabold px-8 py-10 w-full max-w-[555px] bg-yellow hover:bg-[#d6bc29]  rounded text-center"
-          >
-            QUERO ACESSAR TODOS OS MÓDULOS
-          </a>
-        </DefaultMarginSection>
-        <DefaultMarginSection className="flex flex-col  gap-32 sm:gap-64 relative">
-          <div className="circle-decoration absolute w-[400px] h-[400px] z-[1] -left-[200px] md:-left-[150px] lg:-left-[300px] 3xl:-left-[450px] -top-[100px] lg:-top-[150px] xl:w-[600px] xl:h-[600px] 3xl:h-[650px] 3xl:w-[650px]"></div>
-          <div className="flex flex-col items-center">
-            <h2 className="text-center title font-extrabold text-yellow">
-              CONDIÇÃO EXCLUSIVA
-              <br />
-              PRÉ INSCRIÇÃO
-            </h2>
-            <p className="title text-center">
-              DE R$ 997,00 <span className="text-yellow">POR R$ 397,00</span>
+          <Image
+            src={"/img/mobile-screen.webp"}
+            alt={
+              "Celular e tablets com notificações e sites do Monitor do Mercado"
+            }
+            width={442}
+            height={612}
+            loader={imageLoader}
+          />
+          <div className="flex flex-col items-center lg:items-start gap-16 xl:gap-32">
+            <p className="semi-title font-bold text-white text-center lg:text-left">
+              <span className="text-orange">O MONITOR DO MERCADO</span> É UMA
+              PLATAFORMA DE{" "}
+              <span className="text-orange">INFORMAÇÕES E FERRAMENTAS</span>
+              QUE AUXILIAM O INVESTIDOR NA TOMADA DE DECISÃO
             </p>
             <a
-              href="https://pay.hotmart.com/A78289712N?sck=HOTMART_SITE&off=rd2651c7&bid=1676312679980"
-              target={"_blank"}
-              rel="noreferrer"
-              className={
-                "max-w-[415px] w-full text-center py-10 font-extrabold text text-black bg-yellow hover:bg-[#d6bc29]  mt-8 rounded"
-              }
+              className="text text-white bg-orange font-medium py-6 px-16 rounded"
+              href="#"
             >
-              FAZER MINHA INSCRIÇÃO
+              SAIBA MAIS
             </a>
-          </div>
-          <div className="gap-15 flex flex-wrap lg:grid lg:grid-cols-2 lg:max-w-[540px] justify-center m-auto xl:flex xl:max-w-none">
-            <CardNumber
-              number={"01"}
-              description={"Saida do zero e setorne um investidor completo"}
-            />
-            <CardNumber
-              number={"02"}
-              description={"Faça você mesmo seu dinheiro render mais"}
-            />
-            <CardNumber
-              number={"03"}
-              description={"Conheça os diferentes investimentos"}
-            />
-            <CardNumber
-              number={"04"}
-              description={
-                "Segurança e confiança para você e para a sua família"
-              }
+            <Image
+              src={"/img/monitor-logo.webp"}
+              alt={"Monitor do Mercado Logo"}
+              width={370}
+              height={92}
+              className={"object-contain w-80 lg:w-[370px]"}
+              loader={imageLoader}
             />
           </div>
         </DefaultMarginSection>
-        <DefaultMarginSection className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-32 justify-between items-center">
-          <div className="flex flex-col gap-16 w-full lg:max-w-[430px]">
-            <h2 className="text-center lg:text-left text-[36px] lg:text-[54px] font-bold leading-[1]">
-              Com quem você vai <span className="text-yellow">aprender?</span>
-            </h2>
-            <div>
-              <p className="title font-extrabold text-yellow text-center lg:text-left">
-                Douglas Soave
-              </p>
-              <p className="text font-semibold leading-10 text-center lg:text-left">
-                Investidor profissional - ANCORD, Diretor & Partner no grupo
-                Wise | BTG Pactual; MBA em Gestão Comercial e Negócios Sales
-                Strategy - University of Michigan; Pós-graduado pela Fundação
-                Getúlio Vargas (FGV); Engenheiro Mecânico - Escola de Engenharia
-                de Piracicaba.
-              </p>
+        <DefaultMarginSection className="flex flex-col gap-16 lg:gap-32">
+          <div className="flex flex-col items-center gap-8">
+            <p className="title text-orange font-medium text-center">
+              ASSINE NOSSO GRUPO REAL TIME!
+            </p>
+            <a
+              className="semi-title text-white text-center bg-orange font-medium py-6 px-16 rounded"
+              href="#"
+            >
+              O QUE VOCÊ TERA ACESSO?
+            </a>
+          </div>
+          <div className="flex flex-col items-center gap-16 lg:flex-row-reverse lg:items-start lg:justify-between">
+            <Image
+              src={"/img/tablet-with-photo.webp"}
+              alt={"Tablet com a foto de homem segurando celular feliz"}
+              width={349}
+              height={482}
+              className={"object-contain "}
+              loader={imageLoader}
+            />
+            <div className="flex flex-col gap-16 max-w-[39.6875rem]">
+              <TopicText
+                title={"Notícias Em Tempo Real"}
+                description={
+                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
+                }
+              />
+              <TopicText
+                title={"Análises  Do Mercado"}
+                description={
+                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
+                }
+              />
+              <TopicText
+                title={"Informações Que Realmente Importam"}
+                description={
+                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
+                }
+              />
+              <TopicText
+                title={"Acesso a Ferramentas Essenciais"}
+                description={
+                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
+                }
+              />
             </div>
           </div>
-          <figure className="relative flex md:max-w-[300px] lg:w-full lg:max-w-[577px] h-full max-h-[706px]">
-            <div className="circle-decoration-active absolute w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px] z-[1] right-0 bottom-0 3xl:h-[650px] 3xl:w-[650px]"></div>
-            <Image
-              src={"/img/douglas-footer.webp"}
-              alt={"Douglas Soave Foto"}
-              className={"object-contain"}
-              loader={imageLoader}
-              width={577}
-              height={706}
-              unoptimized={true}
+        </DefaultMarginSection>
+        <DefaultMarginSection
+          styles={{
+            background:
+              "radial-gradient(50% 50% at 50% 50%, #353432 0%, #333331 100%)",
+          }}
+          className={"flex flex-col items-center gap-16"}
+        >
+          <div className="flex flex-wrap justify-center gap-16 lg:gap-0 lg:justify-between w-full max-w-[1012px]">
+            <BottomCard className="gap-4">
+              <p className="text-orange text-[2rem] sm:text-[3.25rem] font-medium text-center">
+                INVISTA NO SEU CONHECIMENTO
+              </p>
+              <a
+                className="text text-white bg-orange font-medium py-6 px-16 text-center rounded w-full"
+                href="#"
+              >
+                FAÇA AGORA SUA ASSINATURA
+              </a>
+            </BottomCard>
+            <BottomCard className="gap-4">
+              <div>
+                <p className="semi-title text-white font-medium">POR APENAS</p>
+                <p className="text-white font-medium text-[3.125rem] sm:text-[94px] leading-9 sm:leading-[0.75]">
+                  R$ 29,90
+                </p>
+                <p className="text-[1.125rem] text-white font-medium text-right">
+                  POR MÊS
+                </p>
+              </div>
+              <div className="flex gap-2 items-center">
+                <div>
+                  <p className="text-[16px] sm:text-[26px] text-orange font-medium leading-5">
+                    GARANTIA DE 7 DIAS
+                  </p>
+                  <p className="text-[12px] sm:text-[1.125rem] text-orange font-medium">
+                    100% SEU DINEHIRO DE VOLTA
+                  </p>
+                </div>
+                <Image
+                  src={"/img/medal.svg"}
+                  alt={"Icone de medalha"}
+                  width={39}
+                  height={54}
+                  className={"object-contain "}
+                  loader={imageLoader}
+                />
+              </div>
+            </BottomCard>
+          </div>
+          <h2 className="text-center title text-white font-medium">
+            O QUE NOSSOS <span className="text-orange">ASSINANTES DIZEM</span>
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <SimpleCard
+              description={
+                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+              }
             />
-          </figure>
+            <SimpleCard
+              description={
+                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+              }
+            />
+            <SimpleCard
+              description={
+                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+              }
+            />
+            <SimpleCard
+              description={
+                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+              }
+            />
+          </div>
         </DefaultMarginSection>
       </main>
     </>

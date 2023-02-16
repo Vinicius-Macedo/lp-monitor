@@ -128,14 +128,13 @@ module.exports = {
         full: "1920px",
       },
       fontFamily: {
-        montserrat: "Montserrat",
-        sans: "Open Sans",
+        sans: "'Rubik', sans-serif",
       },
       colors: {
-        black: "#000000",
-        yellow: "#d9c034",
+        black: "#303030",
+        orange: "#FFA500",
         white: "#ffffff",
-        gray: "rgba(255, 255, 255, 0.8)",
+        gray: "#606060",
       },
     },
   },
