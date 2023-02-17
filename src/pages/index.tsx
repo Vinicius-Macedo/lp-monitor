@@ -83,19 +83,17 @@ export default function Home() {
             loader={imageLoader}
             unoptimized
           />
-          <div className="lg:py-32">
-            <div className="p-8 flex flex-col gap-4 bg-[#E9E9E9] max-w-[525px] relative">
-              <p className="semi-title font-medium">
-                <span className="text-orange">PREPARE-SE</span> PARA TER ACESSO,
-                EM PRIMEIRA MÃO, A INFORMAÇÕES{" "}
-                <span className="text-orange">VALIOSAS</span> PARA{" "}
-                <span className="text-orange">SEUS INVESTIMENTOS.</span>
-              </p>
-              <p className="text text-orange underline font-medium">
-                POTENCIALIZE SUA CAPACIDADE DE TOMAR DECISÕES E ALCANÇAR SEUS
-                OBJETIVOS FINANCEIROS.
-              </p>
-            </div>
+          <div className="p-8 flex flex-col gap-4 bg-[#E9E9E9] max-w-[525px] relative">
+            <p className="semi-title font-medium">
+              <span className="text-orange">PREPARE-SE</span> PARA TER ACESSO,
+              EM PRIMEIRA MÃO, A INFORMAÇÕES{" "}
+              <span className="text-orange">VALIOSAS</span> PARA{" "}
+              <span className="text-orange">SEUS INVESTIMENTOS.</span>
+            </p>
+            <p className="text text-orange underline font-medium">
+              POTENCIALIZE SUA CAPACIDADE DE TOMAR DECISÕES E ALCANÇAR SEUS
+              OBJETIVOS FINANCEIROS.
+            </p>
           </div>
         </DefaultMarginSection>
         <DefaultMarginSection
