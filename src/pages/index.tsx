@@ -245,22 +245,22 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <SimpleCard
               description={
-                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+                "O Monitor Real Time é o melhor canal que encontrei para me informar sobre o mercado financeiro, as recomendações são sempre precisas e oportunas."
               }
             />
             <SimpleCard
               description={
-                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+                "Com o grupo, aprendi a identificar as melhores oportunidades de investimento. Estou muito satisfeito com os resultados que tenho alcançado."
               }
             />
             <SimpleCard
               description={
-                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+                "Estou muito satisfeito com o conteúdo do grupo, as informações compartilhadas são valiosas e ajudaram a me manter atualizado sobre o mercado financeiro."
               }
             />
             <SimpleCard
               description={
-                "HÁ ESPAÇO PARA ALGUMAS LINHAS DE TEXTO. CERTIFIQUE-SE DE PASSAR SUA MENSAGEM COM CLAREZA E CONCISÃO."
+                "Desde que entrei no Monitor Real Time, minha compreensão do mercado financeiro melhorou significativamente."
               }
             />
           </div>
