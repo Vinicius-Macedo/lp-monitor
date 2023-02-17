@@ -28,7 +28,7 @@ export default function Home() {
           <div className="max-w-[730px] flex flex-col items-center lg:items-start gap-8">
             <h1 className="title font-medium text-white text-center lg:text-left ">
               RECEBA, EM TEMPO REAL, AS{" "}
-              <span className="text-orange">NOTÍCIAS</span> E ANÁLISES QUE
+              <span className="text-orange">NOTÍCIAS</span> E ANÁLISES QUE{" "}
               <span className="text-orange">IMPACTAM O MERCADO</span>
             </h1>
             <p className="semi-title text-white text-center lg:text-left">
