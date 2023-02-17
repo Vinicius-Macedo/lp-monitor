@@ -28,11 +28,11 @@ export default function Home() {
           <div className="max-w-[730px] flex flex-col items-center lg:items-start gap-8">
             <h1 className="title font-medium text-white text-center lg:text-left ">
               RECEBA PRIMEIRO AS <span className="text-orange">NOTÍCIAS</span> E{" "}
-              <span className="text-orange">ANÁLISE</span> QUE VÃO IMPACTAR O
+              <span className="text-orange">ANÁLISES</span> QUE VÃO IMPACTAR O
               MERCADO
             </h1>
             <p className="semi-title text-white text-center lg:text-left">
-              TOME MELHORES DECISÕES PARA OS SEUS INVESTIMENTOS
+              TOME AS MELHORES DECISÕES PARA OS SEUS INVESTIMENTOS
             </p>
             <a
               className="semi-title text-white bg-orange font-medium py-6 px-16 rounded"
@@ -74,7 +74,7 @@ export default function Home() {
             className="absolute left-0 top-0 object-contain z-[1]"
           />
           <Image
-            src={"/img/notification-alert.svg"}
+            src={"/img/notification-alert.webp"}
             className={"object-contain relative"}
             alt={""}
             width={305}
