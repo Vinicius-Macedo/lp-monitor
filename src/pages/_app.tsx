@@ -16,10 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
         />
 
         {/* <!-- Primary Meta Tags --> */}
-        <title> Alertar - Monitor do Mercado</title>
+        <title> Alertas - Monitor do Mercado</title>
         <meta
           name="title"
-          content=" Alertar - Monitor do Mercado"
+          content=" Alertas - Monitor do Mercado"
         />
         <meta
           name="description"
@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://canvas-monitor.vercel.app/" />
         <meta
           property="og:title"
-          content=" Alertar - Monitor do Mercado"
+          content=" Alertas - Monitor do Mercado"
         />
         <meta
           property="og:description"
@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="twitter:title"
-          content=" Alertar - Monitor do Mercado"
+          content=" Alertas - Monitor do Mercado"
         />
         <meta
           property="twitter:description"
