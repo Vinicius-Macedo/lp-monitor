@@ -16,25 +16,25 @@ export default function App({ Component, pageProps }: AppProps) {
         />
 
         {/* <!-- Primary Meta Tags --> */}
-        <title>Formação de Investidores - Monitor do Mercado</title>
+        <title> Alertar - Monitor do Mercado</title>
         <meta
           name="title"
-          content="Formação de Investidores - Monitor do Mercado"
+          content=" Alertar - Monitor do Mercado"
         />
         <meta
           name="description"
-          content="Aprenda escolher os melhores investimentos e acelerar seus resultados. Conheça os conceitos e práticas de investimentos para tomar as melhores decisões e montar uma carteira de investimentos lucrativa."
+          content="Receba, em tempo real, as notícias e análises que impactam o mercado."
         />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://canvas-monitor.vercel.app/" />
         <meta
           property="og:title"
-          content="Formação de Investidores - Monitor do Mercado"
+          content=" Alertar - Monitor do Mercado"
         />
         <meta
           property="og:description"
-          content="Aprenda escolher os melhores investimentos e acelerar seus resultados. Conheça os conceitos e práticas de investimentos para tomar as melhores decisões e montar uma carteira de investimentos lucrativa."
+          content="Receba, em tempo real, as notícias e análises que impactam o mercado."
         />
         <meta property="og:image" content="/img/social-media-card.png" />
 
@@ -45,11 +45,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="twitter:title"
-          content="Formação de Investidores - Monitor do Mercado"
+          content=" Alertar - Monitor do Mercado"
         />
         <meta
           property="twitter:description"
-          content="Aprenda escolher os melhores investimentos e acelerar seus resultados. Conheça os conceitos e práticas de investimentos para tomar as melhores decisões e montar uma carteira de investimentos lucrativa."
+          content="Receba, em tempo real, as notícias e análises que impactam o mercado."
         />
         <meta property="twitter:image" content="/img/social-media-card.png" />
       </Head>
