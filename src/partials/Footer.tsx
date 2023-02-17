@@ -9,8 +9,28 @@ export default function Footer() {
         <div className="flex flex-col gap-16">
           <p className="font-bold text-orange">FALE CONOSCO</p>
           <div>
-            <p className="text-white">Instagram: @monitordomercado</p>
-            <p className="text-white">Site: www.monitordomercado.com.br</p>
+            <p className="text-white">
+              Instagram:{" "}
+              <a
+                className="underline"
+                href="https://www.instagram.com/monitordomercado/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                @monitordomercado
+              </a>
+            </p>
+            <p className="text-white">
+              site:{" "}
+              <a
+                className="underline"
+                href="https://monitordomercado.com.br/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                monitordomercado.com.br/
+              </a>
+            </p>
           </div>
           <p className="font-bold text-orange">NOSSO ENDEREÇO</p>
           <div>
@@ -23,8 +43,8 @@ export default function Footer() {
         <Image
           src={"/img/monitor-logo.webp"}
           alt={"Logo monitor do mercado"}
-          className={"object-contain w-80 lg:w-[370px]"}
           style={{ width: "auto", height: "auto", objectFit: "contain" }}
+          className={"object-contain w-80 lg:w-[370px]"}
           width={370}
           height={92}
           loader={imageLoader}

@@ -7,7 +7,7 @@ type TopicTextProps = {
   description: string;
 };
 
-export  function TopicText(props: TopicTextProps) {
+export function TopicText(props: TopicTextProps) {
   return (
     <div className="flex items-start">
       <Image
@@ -17,9 +17,12 @@ export  function TopicText(props: TopicTextProps) {
         height={32}
         loader={imageLoader}
         className={"object-contain w-19 h-16"}
+        unoptimized
       />
       <div>
-        <p className="text-[1.625rem] text-gray font-medium underline">{props.title}</p>
+        <p className="text-[1.625rem] text-gray font-medium underline">
+          {props.title}
+        </p>
         <p className="text-[1.125rem] text-gray">{props.description}</p>
       </div>
     </div>

@@ -19,6 +19,7 @@ export default function Home() {
             src={"/img/happy-men-phone.webp"}
             alt={"Homem feliz segurando celular"}
             className={"lg:-right-30 xl:right-[5vw] lg:bottom-0 lg:absolute "}
+            style={{ width: "auto", height: "auto" }}
             width={453}
             height={591}
             unoptimized
@@ -26,9 +27,8 @@ export default function Home() {
           />
           <div className="max-w-[730px] flex flex-col items-center lg:items-start gap-8">
             <h1 className="title font-medium text-white text-center lg:text-left ">
-              ACOMPANHE AS{" "}
-              <span className="text-orange">PRINCIPAIS NOTÍCIAS</span> E
-              ANÁLISES, QUE{" "}
+              RECEBA, EM TEMPO REAL, AS{" "}
+              <span className="text-orange">NOTÍCIAS</span> E ANÁLISES QUE
               <span className="text-orange">IMPACTAM O MERCADO</span>
             </h1>
             <p className="semi-title text-white text-center lg:text-left">
@@ -36,7 +36,9 @@ export default function Home() {
             </p>
             <a
               className="semi-title text-white bg-orange font-medium py-6 px-16 rounded"
-              href="#"
+              href="https://app.hub.la/checkout/pCUsaXyrjBrAyRTLDN3W"
+              target="_blank"
+              rel="noreferrer"
             >
               SAIBA MAIS
             </a>
@@ -48,6 +50,7 @@ export default function Home() {
             width={100}
             height={80}
             loader={imageLoader}
+            unoptimized
           />
         </DefaultMarginSection>
         <DefaultMarginSection
@@ -63,6 +66,7 @@ export default function Home() {
           <Image
             src={"/img/graphic-illustration.webp"}
             alt={""}
+            style={{ width: "auto", height: "auto" }}
             width={1072}
             height={474}
             loader={imageLoader}
@@ -76,17 +80,19 @@ export default function Home() {
             width={305}
             height={59}
             loader={imageLoader}
+            unoptimized
           />
           <div className="lg:py-32">
             <div className="p-8 flex flex-col gap-4 bg-[#E9E9E9] max-w-[525px] relative">
               <p className="semi-title font-medium">
-                <span className="text-orange">PREPARE-SE</span> PARA RECEBER
-                INFORMAÇÕES <span className="text-orange">VALIOSAS</span> SOBRE{" "}
+                <span className="text-orange">PREPARE-SE</span> PARA TER ACESSO,
+                EM PRIMEIRA MÃO, A INFORMAÇÕES{" "}
+                <span className="text-orange">VALIOSAS</span> PARA{" "}
                 <span className="text-orange">SEUS INVESTIMENTOS.</span>
               </p>
               <p className="text text-orange underline font-medium">
-                POTENCIALIZE SUA CAPACIDADE DE TOMAR DECISÕES ACERTIVAS E
-                ALCANÇAR SEUS OBJETIVOS FINANCEIROS.
+                POTENCIALIZE SUA CAPACIDADE DE TOMAR DECISÕES E ALCANÇAR SEUS
+                OBJETIVOS FINANCEIROS.
               </p>
             </div>
           </div>
@@ -105,40 +111,47 @@ export default function Home() {
             width={442}
             height={612}
             loader={imageLoader}
+            unoptimized
           />
           <div className="flex flex-col items-center max-w-[605px] lg:items-start gap-16 xl:gap-32">
             <p className="semi-title font-bold text-white text-center lg:text-left">
               <span className="text-orange">O MONITOR DO MERCADO</span> É UMA
-              PLATAFORMA DE{" "}
-              <span className="text-orange">INFORMAÇÕES E FERRAMENTAS</span>
-              QUE AUXILIAM O INVESTIDOR NA TOMADA DE DECISÃO
+              PLATAFORMA RECONHECIDA DE{" "}
+              <span className="text-orange">INFORMAÇÕES E FERRAMENTAS</span> QUE
+              AUXILIAM O INVESTIDOR NA TOMADA DE DECISÃO
             </p>
             <a
               className="text text-white bg-orange font-medium py-6 px-16 rounded"
-              href="#"
+              href="https://app.hub.la/checkout/pCUsaXyrjBrAyRTLDN3W"
+              target="_blank"
+              rel="noreferrer"
             >
               SAIBA MAIS
             </a>
             <Image
               src={"/img/monitor-logo.webp"}
               alt={"Monitor do Mercado Logo"}
+              style={{ width: "auto", height: "auto" }}
               width={370}
               height={92}
               className={"object-contain w-80 lg:w-[370px]"}
               loader={imageLoader}
+              unoptimized
             />
           </div>
         </DefaultMarginSection>
         <DefaultMarginSection className="flex flex-col gap-16 lg:gap-32">
           <div className="flex flex-col items-center gap-8">
-            <p className="title text-orange font-medium text-center">
-              ASSINE NOSSO GRUPO REAL TIME!
+            <p className="text-[1.75rem] sm:text-[2rem]  lg:text-[3rem] text-orange font-medium text-center">
+              SEJA MEMBRO DO GRUPO MONITOR REAL TIME!
             </p>
             <a
               className="semi-title text-white text-center bg-orange font-medium py-6 px-16 rounded"
-              href="#"
+              href="https://app.hub.la/checkout/pCUsaXyrjBrAyRTLDN3W"
+              target="_blank"
+              rel="noreferrer"
             >
-              O QUE VOCÊ TERA ACESSO?
+              O QUE VOCÊ GANHA COM ISSO?
             </a>
           </div>
           <div className="flex flex-col items-center gap-16 lg:flex-row-reverse lg:items-start lg:justify-between">
@@ -149,30 +162,25 @@ export default function Home() {
               height={482}
               className={"object-contain "}
               loader={imageLoader}
+              unoptimized
             />
             <div className="flex flex-col gap-16 max-w-[39.6875rem]">
               <TopicText
                 title={"Notícias Em Tempo Real"}
                 description={
-                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
+                  "Cobertura especializada do pulso do mercado financeiro, minuto a minuto, da abertura ao fechamento da Bolsa de Valores."
                 }
               />
               <TopicText
-                title={"Análises  Do Mercado"}
+                title={"Análises e Recomendações"}
                 description={
-                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
+                  "Análises de mercado e recomendações de investimento, com preço-alvo, de diferentes casas de análise e research de bancos."
                 }
               />
               <TopicText
-                title={"Informações Que Realmente Importam"}
+                title={"Giro setorial"}
                 description={
-                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
-                }
-              />
-              <TopicText
-                title={"Acesso a Ferramentas Essenciais"}
-                description={
-                  "Há espaço para algumas linhas de texto. Certifique-se de passar sua mensagem com clareza e concisão."
+                  "Entenda a movimentação diária de cada setor na Bolsa."
                 }
               />
             </div>
@@ -193,7 +201,9 @@ export default function Home() {
               </p>
               <a
                 className="text text-white bg-orange font-medium py-6 px-16 text-center rounded w-full"
-                href="#"
+                href="https://app.hub.la/checkout/pCUsaXyrjBrAyRTLDN3W"
+                target="_blank"
+                rel="noreferrer"
               >
                 FAÇA AGORA SUA ASSINATURA
               </a>
@@ -224,6 +234,7 @@ export default function Home() {
                   height={54}
                   className={"object-contain "}
                   loader={imageLoader}
+                  unoptimized
                 />
               </div>
             </BottomCard>
