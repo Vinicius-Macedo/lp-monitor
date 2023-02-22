@@ -18,8 +18,10 @@ export default function Home() {
           <Image
             src={"/img/happy-men-phone.webp"}
             alt={"Homem feliz segurando celular"}
-            className={"lg:-right-30 xl:right-[5vw] lg:bottom-0 lg:absolute "}
-            style={{ width: "auto", height: "auto" }}
+            className={
+              "lg:-right-30 xl:right-[5vw] lg:bottom-0 lg:absolute w-[388px] h-[352px]  object-contain "
+            }
+            style={{ width: "100%", height: "100%" }}
             width={453}
             height={591}
             unoptimized

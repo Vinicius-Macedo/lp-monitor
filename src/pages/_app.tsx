@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://canvas-monitor.vercel.app/" />
+        {/* <meta property="og:url" content="https://canvas-monitor.vercel.app/" /> */}
         <meta
           property="og:title"
           content=" Alertas - Monitor do Mercado"
@@ -38,11 +38,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta property="og:image" content="/img/social-media-card.png" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
+        <meta property="twitter:card" content="/img/social-media-card.png" />
+        {/* <meta
           property="twitter:url"
           content="https://canvas-monitor.vercel.app/"
-        />
+        /> */}
         <meta
           property="twitter:title"
           content=" Alertas - Monitor do Mercado"
