@@ -19,9 +19,9 @@ export default function Home() {
             src={"/img/happy-men-phone.webp"}
             alt={"Homem feliz segurando celular"}
             className={
-              "lg:-right-30 xl:right-[5vw] lg:bottom-0 lg:absolute w-[388px] h-[352px]  object-contain "
+              "w-[388px]  h-[352px]  sm:w-[453px] sm:h-[554px]  object-contain lg:h-auto lg:max-w-none lg:absolute lg:bottom-0 lg:-right-[30px] lg:w-[388px] xl:right-[60px] 3xl:right-[10vw]"
             }
-            style={{ width: "100%", height: "100%" }}
+            // style={{ width: "100%", height: "100%" }}
             width={453}
             height={591}
             unoptimized
