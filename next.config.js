@@ -4,6 +4,7 @@ const nextConfig = {
   swcMinify: true,
   productionBrowserSourceMaps: false,
   trailingSlash: true,
+  assetPrefix: "./",
   images: {
     loader: "custom",
   },
