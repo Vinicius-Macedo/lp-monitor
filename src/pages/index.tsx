@@ -11,12 +11,12 @@ export default function Home() {
       <main className="overflow-hidden">
         <DefaultMarginSection
           hasNoEffect={true}
-          styles={{ backgroundImage: "url('/img/hero-background.webp')" }}
+          styles={{ backgroundImage: "url('./img/hero-background.webp')" }}
           containerClassName={"bg-cover bg-no-repeat"}
           className={"flex flex-col items-center lg:items-start"}
         >
           <Image
-            src={"/img/happy-men-phone.webp"}
+            src={"./img/happy-men-phone.webp"}
             alt={"Homem feliz segurando celular"}
             className={
               "w-[388px]  h-[352px]  sm:w-[453px] sm:h-[554px]  object-contain lg:h-auto lg:max-w-none lg:absolute lg:bottom-0 lg:-right-[30px] lg:w-[388px] xl:right-[60px] 3xl:right-[10vw]"
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <Image
             className="absolute left-0 bottom-0 z-[1] object-contain"
-            src={"/img/bell-icon.webp"}
+            src={"./img/bell-icon.webp"}
             alt={"Icone de sino"}
             width={100}
             height={80}
@@ -59,14 +59,14 @@ export default function Home() {
           hasNoEffect={true}
           containerClassName={"bg-cover bg-no-repeat"}
           styles={{
-            backgroundImage: "url('/img/square-background-repeat.webp')",
+            backgroundImage: "url('./img/square-background-repeat.webp')",
           }}
           className={
             "flex flex-col gap-16 items-center lg:flex-row lg:justify-between"
           }
         >
           <Image
-            src={"/img/graphic-illustration.webp"}
+            src={"./img/graphic-illustration.webp"}
             alt={""}
             style={{ width: "auto", height: "auto" }}
             width={1072}
@@ -76,7 +76,7 @@ export default function Home() {
             className="absolute left-0 top-0 object-contain z-[1]"
           />
           <Image
-            src={"/img/notification-alert.webp"}
+            src={"./img/notification-alert.webp"}
             className={"object-contain relative"}
             alt={""}
             width={305}
@@ -100,11 +100,11 @@ export default function Home() {
         <DefaultMarginSection
           hasNoEffect={true}
           containerClassName="bg-cover bg-no-repeat"
-          styles={{ backgroundImage: "url('/img/phone-background.webp')" }}
+          styles={{ backgroundImage: "url('./img/phone-background.webp')" }}
           className="flex flex-col items-center gap-16 lg:flex-row-reverse"
         >
           <Image
-            src={"/img/mobile-screen.webp"}
+            src={"./img/mobile-screen.webp"}
             alt={
               "Celular e tablets com notificações e sites do Monitor do Mercado"
             }
@@ -129,7 +129,7 @@ export default function Home() {
               SAIBA MAIS
             </a>
             <Image
-              src={"/img/monitor-logo.webp"}
+              src={"./img/monitor-logo.webp"}
               alt={"Monitor do Mercado Logo"}
               style={{ width: "auto", height: "auto" }}
               width={370}
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center gap-16 lg:flex-row-reverse lg:items-start lg:justify-between">
             <Image
-              src={"/img/tablet-with-photo.webp"}
+              src={"./img/tablet-with-photo.webp"}
               alt={"Tablet com a foto de homem segurando celular feliz"}
               width={349}
               height={482}
@@ -228,7 +228,7 @@ export default function Home() {
                   </p>
                 </div>
                 <Image
-                  src={"/img/medal.svg"}
+                  src={"./img/medal.svg"}
                   alt={"Icone de medalha"}
                   width={39}
                   height={54}

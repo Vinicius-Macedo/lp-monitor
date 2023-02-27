@@ -8,7 +8,7 @@ export function Header() {
     <header className="flex items-center bg-orange fixed left-0 top-0 w-full z-[999]">
       <div className="w-full flex justify-between gap-8 px-16 xl:px-0  max-w-[1110px] m-auto py-8">
         <Image
-          src={"/img/monitor-logo-white.webp"}
+          src={"./img/monitor-logo-white.webp"}
           alt={"Logo do monitor do mercado"}
           width={190}
           height={60}

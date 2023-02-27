@@ -11,7 +11,7 @@ export function TopicText(props: TopicTextProps) {
   return (
     <div className="flex items-start">
       <Image
-        src={"/img/check-icon.svg"}
+        src={"./img/check-icon.svg"}
         alt={"Icone de confere"}
         width={38}
         height={32}

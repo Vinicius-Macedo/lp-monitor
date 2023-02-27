@@ -36,9 +36,9 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Receba, em tempo real, as notícias e análises que impactam o mercado."
         />
-        <meta property="og:image" content="/img/social-media-card.png" />
+        <meta property="og:image" content="./img/social-media-card.png" />
 
-        <meta property="twitter:card" content="/img/social-media-card.png" />
+        <meta property="twitter:card" content="./img/social-media-card.png" />
         {/* <meta
           property="twitter:url"
           content="https://canvas-monitor.vercel.app/"
@@ -51,7 +51,7 @@ export default function App({ Component, pageProps }: AppProps) {
           property="twitter:description"
           content="Receba, em tempo real, as notícias e análises que impactam o mercado."
         />
-        <meta property="twitter:image" content="/img/social-media-card.png" />
+        <meta property="twitter:image" content="./img/social-media-card.png" />
       </Head>
       <Header />
       <Component {...pageProps} />

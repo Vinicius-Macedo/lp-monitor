@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         <Image
-          src={"/img/monitor-logo.webp"}
+          src={"./img/monitor-logo.webp"}
           alt={"Logo monitor do mercado"}
           style={{ width: "auto", height: "auto", objectFit: "contain" }}
           className={"object-contain w-80 lg:w-[370px]"}
