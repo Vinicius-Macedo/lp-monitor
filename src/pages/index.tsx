@@ -42,7 +42,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              SAIBA MAIS
+              ASSINAR
             </a>
           </div>
           <Image
@@ -126,7 +126,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              SAIBA MAIS
+              ASSINAR
             </a>
             <Image
               src={"./img/monitor-logo.webp"}

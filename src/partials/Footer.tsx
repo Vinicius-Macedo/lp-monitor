@@ -21,7 +21,7 @@ export default function Footer() {
               </a>
             </p>
             <p className="text-white">
-              site:{" "}
+              Site:{" "}
               <a
                 className="underline"
                 href="https://monitordomercado.com.br/"
